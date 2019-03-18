@@ -1,0 +1,224 @@
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, img { margin: 0px; padding: 0px; }
+body { font-size: 12px; color: rgb(0, 0, 0); font-family: 宋体; }
+body a { font-family: 宋体; text-decoration: none; }
+a:link, a:visited { outline: none; }
+a:hover { color: rgb(255, 0, 0); }
+a, area { }
+:focus { }
+img { border: 0px; outline: none; }
+ul, li { list-style-type: none; }
+body { margin: 0px; padding: 0px; }
+ol, ul, li { list-style: none; }
+focus { outline: none; }
+samp { font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+.hcdict-btnclose, .hcdict-fixer { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_icon01.png"); }
+.hcdict-popcont { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_bg.png"); }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, img { margin: 0px; padding: 0px; }
+body { font-size: 12px; color: rgb(0, 0, 0); font-family: 宋体; }
+body a { font-family: 宋体; text-decoration: none; }
+a:link, a:visited { outline: none; }
+a:hover { color: rgb(255, 0, 0); }
+a, area { }
+:focus { }
+img { border: 0px; outline: none; }
+ul, li { list-style-type: none; }
+body { margin: 0px; padding: 0px; }
+ol, ul, li { list-style: none; }
+focus { outline: none; }
+samp { font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+.hcdict-btnclose, .hcdict-fixer { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_icon01.png"); }
+.hcdict-popcont { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_bg.png"); }
+.hcdict-btnclose, .hcdict-fixer { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_icon01.png"); }
+.hcdict-popcont { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_bg.png"); }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, img { margin: 0px; padding: 0px; }
+body { font-size: 12px; color: rgb(0, 0, 0); font-family: 宋体; }
+body a { font-family: 宋体; text-decoration: none; }
+a:link, a:visited { outline: none; }
+a:hover { color: rgb(255, 0, 0); }
+a, area { }
+:focus { }
+img { border: 0px; outline: none;
+    max-width: 100%;
+    height: auto; }
+ul, li { list-style-type: none; }
+.xyyw h3, .xyxw h3 { height: 35px; border-bottom: 1px solid rgb(224, 219, 207); text-align: left; }
+.xyyw h3 span, .xyxw h3 span { float: right; margin-top: 10px; }
+.headLines { padding-top: 18px; }
+.picNews {  height: 240px; overflow: hidden; float: left; position: relative; }
+.picNews .bd { width: 370px; height: 240px; }
+.picNews .bd ul { width: 370px; height: 240px; zoom: 1; overflow: hidden; }
+.picNews .bd ul li { width: 370px; height: 240px; float: left; overflow: hidden; position: relative; }
+.picNews .bd ul li img { max-width:100%; height: 240px; }
+.picNews .bd ul li p { width: 268px; height: 30px; line-height: 30px; background: url("../images/picNewsTxtBg.png") repeat; color: rgb(255, 255, 255); font-size: 12px; position: absolute; left: 0px; bottom: 0px; padding: 0px 92px 0px 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.picNews .hd { width: 72px; height: 8px; padding: 11px 10px 11px 0px; position: absolute; right: 0px; bottom: 0px; z-index: 1; }
+.picNews .hd ul { float: right; height: 8px; }
+.picNews .hd li { width: 8px; height: 8px; background: url("../images/picNewsHd.png") left center no-repeat; cursor: pointer; margin: 0px 2px; font-size: 0px; text-indent: -999px; float: left; }
+.picNews .hd li.on { background-position: right center; }
+.txtNews { height: 240px; }
+.txtNews li { line-height: 23px; background: url("../images/icon01.jpg") left center no-repeat; padding-left: 12px; text-align: left; }
+.txtNews li span { float: right; color: rgb(102, 102, 102); }
+.xyxw { height: 294px; }
+.xyxw ul { height: 240px; padding-top: 18px; }
+.xyxw li { line-height: 23px; background: url("../images/icon01.jpg") left center no-repeat; padding-left: 12px; text-align: left; }
+.xyxw li span { float: right; color: rgb(102, 102, 102); }
+.ydxw { height: 230px; }
+.ydxw h3 span { float: right; margin-top: 10px; }
+.ydxw h3 { height: 35px; border-bottom: 1px solid rgb(224, 219, 207); margin-bottom: 10px; text-align: left; }
+.ydxw li span { float: right; color: rgb(102, 102, 102); margin-right: 5px; }
+.ydxw ul li { line-height: 23px; background: url("../images/icon01.jpg") left center no-repeat; padding-left: 12px; text-align: left; }
+.xxgg { height: 230px; }
+.xxgg h3 span { float: right; margin-top: 10px; }
+.xxgg h3 { height: 35px; border-bottom: 1px solid rgb(224, 219, 207); margin-bottom: 10px; text-align: left; }
+.xxgg ul li { height: 30px; line-height: 30px; background: url("../images/icon01.jpg") left center no-repeat; padding-left: 12px; text-align: left; }
+.xxgg li span { float: right; color: rgb(102, 102, 102); margin-right: 5px; }
+.xshd h3 span { float: right; margin-top: 10px; }
+.xshd h3 { height: 35px; border-bottom: 1px solid rgb(224, 219, 207); text-align: left; }
+.xshd01 { float: left; margin-top: 20px; margin-bottom: 5px; }
+.leftxshd { float: left; width: 50px; height: 36px; text-align: center; vertical-align: middle; background: url("../images/xsbgrq.jpg") center center no-repeat; margin-left: 5px; }
+.dateyear { float: left; width: 50px; color: rgb(255, 255, 255); line-height: 20px; text-align: center; vertical-align: middle; }
+.detemon { float: left; width: 50px; line-height: 16px; color: rgb(140, 21, 21); text-align: center; vertical-align: middle; }
+.rightxshd { float: left; margin-left: 12px; display: inline; text-align: left;width:80%; }
+.rightxshdtitle { height: 14px; line-height: 14px; background: none;  white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin-bottom: 8px; }
+.rightxshdbgr { height: 14px; line-height: 14px; color: rgb(144, 144, 144); width: 290px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.rightxshdbgr a:link, .rightxshdbgr a:visited { color: rgb(144, 144, 144); display: block; }
+.rightxshdbgr a:hover { color: rgb(135, 19, 19); }
+.marqueeWrap { position: relative; cursor: pointer; }
+.marqueeDiv { height: 415px; width: 1000px; overflow: hidden; }
+.item { position: relative; }
+.item img { height: 415px; width: 1000px; display: block; margin: 0px; padding: 0px; outline: none; }
+.item span { display: block; padding: 8px 12px; position: absolute; z-index: 10; right: 30px; bottom: 20px; color: rgb(141, 21, 22); font-size: 25px; font-family: "Microsoft YaHei", 微软雅黑, 黑体, Arial, Helvetica, sans-serif; font-weight: 300; }
+.mask { opacity: 0.7; border-radius: 2px; position: absolute; background-color: rgb(255, 255, 255); z-index: 5; right: 30px; bottom: 20px; }
+.toLeft { position: absolute; left: 0px; top: 175px; z-index: 20; display: none; opacity: 0.6; }
+.toRight { position: absolute; right: 0px; top: 175px; z-index: 20; display: none; opacity: 0.6; }
+body { margin: 0px; padding: 0px; }
+ol, ul, li { list-style: none; }
+focus { outline: none; }
+samp { font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+.hcdict-btnclose, .hcdict-fixer { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_icon01.png"); }
+.hcdict-popcont { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_bg.png"); }
+.hcdict-btnclose, .hcdict-fixer { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_icon01.png"); }
+.hcdict-popcont { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_bg.png"); }
+/*新增加*/
+.first-main,.two-main{
+    margin-top: 30px;
+}
+.first-main .txtNews a,.first-main .xyxw a,.two-main a{
+    display: inline-block;
+    width: 87%;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+/*来访人*/
+.footer-one{
+    background: #f2f1eb;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.footer-one .left-div a img{
+    width: 33.3%;
+    float: left;
+}
+
+.footer-one .right-ul{
+    margin-top: 10px;
+}
+.footer-one .right-ul .quicklink{
+    margin-top: 4px;
+}
+.footer-one .right-ul .quicklink li{
+    margin-top: 4px;
+    padding: 0;
+}
+.footer-one .right-ul a{
+    color: #886a3e;
+}
+.footer-one .right-ul a:hover{
+    color: #000;
+}
+.footer-one .quicklink h3{
+    width: 40%;
+    float: left;
+    padding: 10px 0 10px 10px;
+    margin-right: 5%;
+    margin-top: 10px;
+    border-left: 1px solid #d4d3c1;
+}
+.footer-one .quicklink ul{
+    width: 55%;
+    float: left;
+    padding-left: 10px;
+}
+/*常用链接*/
+.friendlink{
+    width: 100%;
+    background: #dcdacb;
+
+}
+.friendlink .i_wzdh_con{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #b0afab;
+
+}
+.friendlink .i_wzdh_con li{
+    margin-left: 30px;
+    font-size: 14px;
+    padding-right: 20px;
+    color: #4d4d4d;
+    vertical-align: middle;
+    background: url(../images/yqlj_ircon.jpg) right no-repeat;
+}
+.daohang_list .jgliebiao li{
+    line-height: 28px;
+    height: 28px;
+    width: 25%;
+    float: left;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.daohang_list .jgliebiao li a{
+    color: #2e2e2e;
+}
+
+@media (max-width: 992px) {
+    .footer-one .right-ul .quicklink{
+      /*  border-bottom: 1px solid #d4d3c1;*/
+    }
+    .first-main, .two-main {
+        margin-top: 10px;
+    }
+    .two-main .xshd,.two-main .xxgg{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+}
+
+.mobile-tabs{
+    margin-top: 15px;
+}
+.mobile-tabs .mobile-tab{
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    border-right: 1px solid #cccccc;
+    background: #efefef;
+}
+.mobile-tabs .mobile-tab:last-child{
+    border-right: none;
+}
+.mobile-tabs .mobile-tab.active{
+    background: #881414;
+    color: #fff;
+}

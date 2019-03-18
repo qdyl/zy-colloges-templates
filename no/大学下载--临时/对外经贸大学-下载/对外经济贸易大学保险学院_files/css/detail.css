@@ -1,0 +1,40 @@
+.detail{
+    margin-top: 20px;
+    background: #fff;
+}
+.listBox h1 {
+    background: url(../images/listbg.jpg) repeat-x;
+    line-height: 38px;
+    font-size: 18px;
+    color: #292929;
+    padding-left: 24px;
+}
+.content h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #369;
+    margin-bottom: 20px;
+}
+.content {
+    padding: 50px;
+    line-height: 28px;
+}
+.listBox .text{
+    text-indent: 30px;
+    color: #757575;
+    font-size: 14px;
+    line-height: 30px;
+}
+@media (max-width: 768px){
+    .detail{
+        margin-top: 10px;
+    }
+    .content {
+        padding:10px 5px;
+        line-height: 28px;
+    }
+    .content h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}

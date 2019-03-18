@@ -1,0 +1,169 @@
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, img { margin: 0px; padding: 0px; }
+body { font-size: 12px; color: rgb(0, 0, 0); font-family: 宋体; }
+body a { font-family: 宋体; text-decoration: none; }
+a:link, a:visited { color: rgb(0, 0, 0); outline: none; }
+a:hover { color: rgb(255, 0, 0); }
+a, area { }
+/*img{
+    max-width: 100%;
+    height: auto;
+}*/
+:focus { }
+img { border: 0px; outline: none; }
+ul, li { list-style-type: none; }
+.menu {  height: 40px; text-align: center;
+    background: #f2f1eb;  }
+.menu ul li { float: left;width: 9.09%; line-height: 40px; font-size: 14px; background: url("../images/menuline.jpg") right center no-repeat; font-weight: bold; text-align: center; vertical-align: middle;border-right:1px solid #ccc; font-family: "Microsoft YaHei", 微软雅黑, MicrosoftJhengHei, 华文细黑, STHeiti, MingLiu; }
+.menu ul li:last-child{
+    border-right: none;
+}
+.menu ul li.home {  }
+.menu li a:link, .menu li a:visited { color: rgb(46, 45, 41); display: block; }
+.menu li a:hover { color: rgb(135, 19, 19); }
+.dropMenu { position: absolute; top: 0px; border-width: 1px 1px 0px; border-style: solid; border-color: rgb(255, 255, 255); border-image: initial; z-index: 100; background-color: rgb(135, 19, 19); opacity: 0.96; width: 112px; display: none; margin-left: 0px; margin-top: 0px; }
+.dropMenu a:link, .dropMenu a:visited { width: auto; display: block; text-indent: 2px; border-top: 0px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(255, 255, 255); padding: 2px 0px; text-decoration: none; color: rgb(255, 255, 255); text-align: center; font-size: 12px; line-height: 24px; height: 24px; font-weight: normal; }
+.dropMenu a:hover { color: rgb(239, 239, 239);
+    background: #cb1b1c;}
+.popMenu { position: absolute; top: 0px; border-width: 1px 1px 0px; border-style: solid; border-color: rgb(255, 255, 255); border-image: initial; z-index: 100; background-color: rgb(132, 12, 13); opacity: 0.96; width: 120px; display: none; margin-left: 0px; margin-top: 0px; }
+.popMenu a:link, .popMenu a:visited { width: auto; display: block; text-indent: 2px; border-top: 0px solid rgb(103, 139, 63); border-bottom: 1px solid rgb(255, 255, 255); padding: 2px 0px; text-decoration: none; color: rgb(255, 255, 255); text-align: center; font-size: 12px; line-height: 24px; height: 24px; font-weight: normal; }
+.popMenu a:hover{background:#f96a0b}
+
+.hasPopMenu_a { background-image: url("../images/arrow00.gif"); background-repeat: no-repeat; background-position: right center; }
+body { margin: 0px; padding: 0px; }
+ol, ul, li { list-style: none; }
+focus { outline: none; }
+samp { font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+.hcdict-btnclose, .hcdict-fixer { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_icon01.png"); }
+.hcdict-popcont { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_bg.png"); }
+.header-bar { height: 30px; line-height: 30px; background: rgb(133, 13, 14); text-align: right; }
+.header-bar a { font-size: 12px; color: rgb(242, 224, 202);
+    padding: 0 0 0 20px; }
+.header-bar a:hover { color: rgb(255, 255, 0); }
+.header-logo-search { background: rgb(138, 20, 20); }
+.header-logo-search { overflow: hidden; }
+.header-logo-search .container{
+    position: relative;
+    background: url(../images/top.jpg) no-repeat center 65%;
+}
+.header-logo-search .search{
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.header-logo-search .logo-img { float: left; }
+.header-logo-search .logo-img img{
+    max-width: 100%;
+    height: auto;
+}
+.header-logo-search input { height: 27px;
+    width:180px;
+    float: left;}
+.header-logo-search button { width:32px; height: 27px; vertical-align: middle; background: url("../images/searchm.jpg");
+    float: left;
+    border: none;}
+.footer-copyright { position: relative; text-align: center; color: rgb(249, 235, 185); background: rgb(140, 21, 21); padding: 20px 0px; }
+.footer-copyright .blue-img { left: 22%; top: 10px; position: absolute; }
+.footer-copyright p { line-height: 24px; }
+.footer-copyright p a { color: rgb(249, 235, 185); }
+.footer-copyright p a:link { color: rgb(227, 205, 192); }
+.footer-copyright p img { vertical-align: top; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, img { margin: 0px; padding: 0px; }
+body { font-size: 12px; color: rgb(0, 0, 0); font-family: 宋体; }
+body a { font-family: 宋体; text-decoration: none; }
+a:link, a:visited { outline: none; }
+a:hover { color: rgb(255, 0, 0); }
+a, area { }
+:focus { }
+img { border: 0px; outline: none; }
+ul, li { list-style-type: none; }
+body { margin: 0px; padding: 0px; }
+ol, ul, li { list-style: none; }
+button { outline: none; }
+samp { font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+.hcdict-btnclose, .hcdict-fixer { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_icon01.png"); }
+.hcdict-popcont { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_bg.png"); }
+.hcdict-btnclose, .hcdict-fixer { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_icon01.png"); }
+.hcdict-popcont { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_bg.png"); }
+.address-p{
+    display: inline-block;
+    position: relative;
+}
+.address-p .blue-img{
+    position: absolute;
+    left: -100px;
+    top: -30px;
+
+}
+
+@media (max-width: 992px) {
+    .menu ul li a{
+        font-size: 13px;
+    }
+}
+
+/*响应式折叠导航*/
+header{
+    position: relative;
+}
+.none{
+    display: none;
+}
+.mobile-nav-collapse{
+    position: absolute;
+    top: 4px;
+    left: 2px;
+}
+.collapse-more-icon{
+    display: inline-block;
+    width: 30px;
+    height: 23px;
+    background:url("../images/collapse-more.png") no-repeat center/30px 30px;
+}
+.collapse-items-wrap{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: rgba(0,0,0,.3);
+}
+.collapse-items{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #862020 /*#8c3333*/ /*#9b1313*/;
+    z-index: 10;
+    -webkit-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+    -webkit-overflow-scrolling: touch;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+.collapse-items.active{
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.collapse-items li{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ccc;
+    border-top: 1px solid rgba(0,0,0,0.4);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+.collapse-items li a{
+    color: #fff;
+}

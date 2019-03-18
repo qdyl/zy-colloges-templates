@@ -1,0 +1,193 @@
+a{display: inline-block;}
+.list-container{
+  margin-top: 20px;
+  // 移动端展示的tab
+  .mobile-tabs{
+    .mobile-tab{
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 14px;
+      border-left: 1px solid #ccc;
+      background: #e4e4e4;
+      &:first-child{
+        border-left: none;
+      }
+      &.active{
+        background: #a52b2b;
+
+        a{
+          color: #fff;
+        }
+      }
+    }
+  }
+  // 左面板
+  .left-panel{
+    min-height: 800px;
+    background: url(../images/leftbg.jpg) bottom center no-repeat #f2f1eb;
+
+    .title{
+      height: 39px;
+      line-height: 39px;
+      background: url(../images/leftmenubg.jpg) center center no-repeat;
+      text-align: center;
+      vertical-align: middle;
+      color: #f2f1eb;
+      font-size: 16px;
+      margin-bottom: 20px;
+
+    }
+    .tab-items{
+      .tab-item{
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-top: 10px;
+        a{
+          width: 80%;
+          height: 100%;
+          margin: 0 auto;
+          background: #e3dec8;
+          text-align: center;
+          font-size: 14px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          &:hover {
+            color: #f00;
+          }
+        }
+      }
+    }
+
+  }
+  // 右面板
+  .right-panel{
+
+    .title{
+      margin-bottom: 15px;
+      line-height: 38px;
+      border-bottom: 2px solid #cccccc;
+      .left-span{
+        display: inline-block;
+        height: 39px;
+        background: url(../images/icon02.jpg) 5px center no-repeat;
+        border-bottom: 2px solid #851313;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        position: relative;
+        top: 2px;
+        color: #861313;
+      }
+    }
+    // 搜索框
+    form{
+
+    }
+    // 列表页
+    .lists-detail{
+      margin-top: 15px;
+      .list-a{
+        background: url(../images/icon01.jpg) 5px center no-repeat;
+        height: 35px;
+        line-height: 35px;
+        border-bottom: 1px dashed #cccccc;
+        padding-left: 18px;
+        text-align: left;
+        overflow: hidden;
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+      }
+    }
+    // 搜索设置
+    .search-setting-wrap{
+      margin-bottom: 20px;
+      .search-setting{
+        height: 30px;
+        padding-left: 20px;
+        line-height: 30px;
+        font-size: 12px;
+        border: 1px solid #DADADA;
+        background: url(../images/bg.gif);
+        margin: 10px 0 -1px 0;
+        a{
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          vertical-align: middle;
+        }
+        .the-first{
+          background: url(../images/first_disabled.gif) no-repeat center;
+          cursor: auto;
+        }
+        .pre{
+          background: url(../images/prev_disabled.gif) no-repeat center;
+          cursor: auto;
+        }
+        .next{
+          background: url(../images/next.gif) no-repeat center;
+        }
+        .the-last{
+          background: url(../images/last.gif) no-repeat center;
+        }
+        input{
+          width: 30px;
+          height: 20px;
+        }
+      }
+    }
+
+
+  }
+
+}
+
+@media  (max-width: 768px){
+  .list-container .right-panel .search-setting-wrap .search-setting{
+    padding-left: 0;
+  }
+  
+}
+
+// 详细页
+.detail-article{
+  .detail-title{
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+
+  }
+  .article-info{
+
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background: #f3f3f3;
+    span{
+      font-size: 12px;
+    }
+  }
+  .article-text{
+    margin-top: 20px;
+    .text-p{
+      font-family: "宋体";
+      text-indent: 20px;
+      font-size: 14px;
+      line-height: 30px;
+
+    }
+    .img{
+      margin: 10px 0;
+      text-align: center;
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

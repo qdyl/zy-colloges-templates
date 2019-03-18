@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .row{
+            height: 100px;
+        }
+        .row div{
+            height: 100px;
+            background: #fbf4eb;
+            border: 1px solid red;
+        }
+        img{
+            width: 500px;
+            height: 100%;
+        }
+        a{
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<!--<nav class="navbar navbar-default">
+<div class="container">
+    <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#example-one">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand" style="padding: 0;">
+            <img src="images/logo.jpg" alt="">
+        </a>
+    </div>
+
+    <div id="example-one" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="#">响应式导航1</a></li>
+            <li><a href="#">响应式导航1</a></li>
+            <li><a href="#">响应式导航1</a></li>
+            <li><a href="#">响应式导航1</a></li>
+        </ul>
+        <form action="" class="navbar-form navbar-right">
+            <div class="form-group">
+                <input type="text" class="form-control">
+            </div>
+        </form>
+        <button class="btn btn-default navbar-btn">提交</button>
+        <p class="navbar-text">我是一段文本</p>
+    </div>
+</div>
+
+</nav>-->
+
+<!--轮播-->
+<!--<div id="myCarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active"><img src="images/logo.jpg" alt=""></div>
+        <div class="item"><img src="images/logo.jpg" alt=""></div>
+        <div class="item"><img src="images/logo.jpg" alt=""></div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<button class="pause">停止</button>-->
+
+<!--响应式工具-->
+<div>
+    <div class="visible-xs-inline visible-sm-inline">我在手机上，才显示。</div>
+</div>
+
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+ /*   $('.pause').on('click',function (e) {
+        $('#myCarousel').carousel('cycle');
+    })*/
+ $('#myCarousel').on('slide.bs.carousel', function () {
+     alert(11)
+ })
+    $('#myCarousel').on('slid.bs.carousel', function () {
+        alert(22)
+    })
+</script>
+</html>

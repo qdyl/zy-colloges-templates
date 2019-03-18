@@ -1,0 +1,71 @@
+
+.mt30 { margin-top: 30px; }
+.yl_tit { font-size: 26px; color: rgb(58, 58, 58); border-left: 4px solid rgb(44, 118, 199); height: 28px; padding-left: 15px; margin: 5px 0px 30px; line-height: 28px; }
+.listmenu ul li {  border-bottom: 1px solid rgb(187, 187, 187); background: url("../images/jt2.png") left 18px no-repeat; padding-left: 20px; line-height: 46px; font-size: 16px; }
+.listmenu a { color: rgb(26, 26, 26); }
+.ylm_ulon a { color: rgb(44, 118, 199); }
+.listBox {  border: 1px solid rgb(187, 187, 187); background: rgb(255, 255, 255); font-size: 14px; line-height: 40px; }
+.listBox h1 { background: url("../images/listbg.jpg") repeat-x; line-height: 38px; font-size: 18px; color: rgb(41, 41, 41); padding-left: 24px; }
+.listBox ul { padding: 50px 60px; min-height: 470px; }
+.listBox ul li a { display: inline-block; width: 80%; height: 40px; overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.listBox ul li span { display: inline-block; float: right; color: rgb(148, 148, 148); }
+.page { background: rgb(137, 137, 137); line-height: 30px; padding: 0px 35px; color: rgb(255, 255, 255); text-align: center; font-size: 12px; }
+.page a { color: rgb(255, 255, 255); }
+.yxgk_right {  min-height: 600px; }
+.hcdict-btnclose, .hcdict-fixer { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_icon01.png"); }
+.hcdict-popcont { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_bg.png"); }
+select{color: #000;}
+
+.list-tabs{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+.list-tabs a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    color: #000;
+}
+.list-tabs .list-tab{
+    border-left: 1px solid #cec2c2;
+}
+.list-tabs .list-tab.active{
+    background: #384462;
+}
+.list-tabs .list-tab.active a{
+    color: #fff;
+}
+@media (max-width: 992px) {
+    .listBox ul {
+        padding: 20px 5px;
+    }
+    .yl_tit {
+        font-size: 22px;
+        margin: 5px 0px 10px;
+        line-height: 28px;
+    }
+    .mt30 {
+        margin-top: 10px;
+    }
+}
+@media  (max-width: 768px){
+    .yxgk_right {
+        padding: 0;
+        min-height: auto;
+    }
+    .listBox ul li a {
+        width: 75%;
+        height: 40px;
+    }
+    .mt30 {
+        margin-top: 0;
+    }
+
+}

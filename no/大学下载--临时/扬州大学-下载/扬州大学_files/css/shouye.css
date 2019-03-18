@@ -1,0 +1,65 @@
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, img { margin: 0px; padding: 0px; }
+body { font-size: 12px; color: rgb(0, 0, 0); font-family: 宋体; }
+body a { font-family: 宋体; text-decoration: none; }
+a:link, a:visited {  outline: none; }
+a:hover { color: rgb(255, 0, 0); }
+a, area { }
+:focus { }
+img { border: 0px; outline: none; }
+ul, li { list-style-type: none; }
+.xyyw h3, .xyxw h3 { height: 35px; border-bottom: 1px solid rgb(224, 219, 207); text-align: left; }
+.xyyw h3 span, .xyxw h3 span { float: right; margin-top: 10px; }
+.headLines { width: 774px; height: 240px; padding-top: 18px; }
+.picNews { width: 370px; height: 240px; overflow: hidden; float: left; position: relative; }
+.picNews .bd { width: 370px; height: 240px; }
+.picNews .bd ul { width: 370px; height: 240px; zoom: 1; overflow: hidden; }
+.picNews .bd ul li { width: 370px; height: 240px; float: left; overflow: hidden; position: relative; }
+.picNews .bd ul li img { width: 370px; height: 240px; }
+.picNews .bd ul li p { width: 268px; height: 30px; line-height: 30px; background: url("../images/picNewsTxtBg.png") repeat; color: rgb(255, 255, 255); font-size: 12px; position: absolute; left: 0px; bottom: 0px; padding: 0px 92px 0px 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.picNews .hd { width: 72px; height: 8px; padding: 11px 10px 11px 0px; position: absolute; right: 0px; bottom: 0px; z-index: 1; }
+.picNews .hd ul { float: right; height: 8px; }
+.picNews .hd li { width: 8px; height: 8px; background: url("../images/picNewsHd.png") left center no-repeat; cursor: pointer; margin: 0px 2px; font-size: 0px; text-indent: -999px; float: left; }
+.picNews .hd li.on { background-position: right center; }
+.txtNews { height: 240px; margin-left: 392px; }
+.txtNews li { line-height: 30px; background: url("../images/icon01.jpg") left center no-repeat; padding-left: 12px; text-align: left; }
+.txtNews li span { float: right; color: rgb(102, 102, 102); }
+.xyxw { height: 294px; }
+.xyxw ul { height: 240px; padding-top: 18px; }
+.xyxw li { line-height: 30px; background: url("../images/icon01.jpg") left center no-repeat; padding-left: 12px; text-align: left; }
+.xyxw li span { float: right; color: rgb(102, 102, 102); }
+.ydxw { height: 230px; }
+.ydxw h3 span { float: right; margin-top: 10px; }
+.ydxw h3 { height: 35px; border-bottom: 1px solid rgb(224, 219, 207); margin-bottom: 10px; text-align: left; }
+.ydxw li span { float: right; color: rgb(102, 102, 102); margin-right: 5px; }
+.ydxw ul li { line-height: 30px; background: url("../images/icon01.jpg") left center no-repeat; padding-left: 12px; text-align: left; }
+.xxgg { height: 230px; }
+.xxgg h3 span { float: right; margin-top: 10px; }
+.xxgg h3 { height: 35px; border-bottom: 1px solid rgb(224, 219, 207); margin-bottom: 10px; text-align: left; }
+.xxgg ul li { height: 30px; line-height: 30px; background: url("icon01.jpg") left center no-repeat; padding-left: 12px; text-align: left; }
+.xxgg li span { float: right; color: rgb(102, 102, 102); margin-right: 5px; }
+.xshd h3 span { float: right; margin-top: 10px; }
+.xshd h3 { height: 35px; border-bottom: 1px solid rgb(224, 219, 207); text-align: left; }
+.xshd01 { float: left; margin-top: 20px; margin-bottom: 5px; }
+.leftxshd { float: left; width: 50px; height: 36px; text-align: center; vertical-align: middle; background: url("xsbgrq.jpg") center center no-repeat; margin-left: 5px; }
+.dateyear { float: left; width: 50px; color: rgb(255, 255, 255); line-height: 20px; text-align: center; vertical-align: middle; }
+.detemon { float: left; width: 50px; line-height: 16px; color: rgb(140, 21, 21); text-align: center; vertical-align: middle; }
+.rightxshd { float: left; margin-left: 12px; display: inline; text-align: left; }
+.rightxshdtitle { height: 14px; line-height: 14px; background: none; width: 290px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin-bottom: 8px; }
+.rightxshdbgr { height: 14px; line-height: 14px; color: rgb(144, 144, 144); width: 290px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.rightxshdbgr a:link, .rightxshdbgr a:visited { color: rgb(144, 144, 144); display: block; }
+.rightxshdbgr a:hover { color: rgb(135, 19, 19); }
+.marqueeWrap { position: relative; cursor: pointer; }
+.marqueeDiv { height: 415px; width: 1200px; overflow: hidden; }
+.item { position: relative; }
+.item img { height: 415px; width: 1200px; display: block; margin: 0px; padding: 0px; outline: none; }
+.item span { display: block; padding: 8px 12px; position: absolute; z-index: 10; right: 30px; bottom: 20px; color: rgb(141, 21, 22); font-size: 25px; font-family: "Microsoft YaHei", 微软雅黑, 黑体, Arial, Helvetica, sans-serif; font-weight: 300; }
+.mask { opacity: 0.7; border-radius: 2px; position: absolute; background-color: rgb(255, 255, 255); z-index: 5; right: 30px; bottom: 20px; }
+.toLeft { position: absolute; left: 0px; top: 175px; z-index: 20; display: none; opacity: 0.6; }
+.toRight { position: absolute; right: 0px; top: 175px; z-index: 20; display: none; opacity: 0.6; }
+body { margin: 0px; padding: 0px; }
+ol, ul, li { list-style: none; }
+focus { outline: none; }
+samp { font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+.hcdict-btnclose, .hcdict-fixer { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_icon01.png"); }
+.hcdict-popcont { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_bg.png"); }

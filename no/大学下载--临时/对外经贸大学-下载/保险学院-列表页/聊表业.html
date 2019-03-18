@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0043)http://insurance.uibe.edu.cn/jxgl/jxgl.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>对外经济贸易大学保险学院</title>
+<link href="列表页/common.css" type="text/css" rel="stylesheet">
+<script src="列表页/bxxy.js.下载" type="text/javascript"></script>
+<script src="列表页/jquery-1.9.1.min.js.下载" type="text/javascript"></script>
+<script src="列表页/loadContent.js.下载" type="text/javascript"></script>
+<script type="text/javascript">
+    function ReloadIframe() {
+        if (Request("parm2") != "") {
+            document.getElementById("mainiframe").src = "../html/contentpage.aspx?TypeID=" + Request("TypeID") + "&ParentID=" + Request("ParentID") + "&SubID=" + Request("SubID") + "&NewsID=" + Request("NewsID");
+        }
+        else {
+            document.getElementById("mainiframe").src = "../html/contentlist.aspx?TypeID=26";
+        }
+    }
+
+    /*changeLeftMenu*/
+    function getName(strUrl, strName) {
+        var l = strUrl.split("&").length;
+        for (i = 0; i < l; i++) {
+            if (strUrl.split("&")[i].split("=")[0] == strName) {
+                return strUrl.split("&")[i].split("=")[1] + "=" + strUrl.split("&")[i].split("=")[2];
+            }
+        }
+    }
+    function leftMenuOnload() {
+        if (location.href.split("?").length > 1) {
+            var url = location.href;
+            var tmp1 = url.split("?");
+            tmp2 = tmp1[1] + "?" + tmp1[2];
+
+            //if (getName(tmp1, "num")) {
+            //var num = unescape(getName(tmp1, "num"));
+            //changeLeftMenu(num);
+            //}
+            if (getName(tmp2, "page")) {
+                var page = unescape(getName(tmp2, "page"));
+                document.getElementById("mainiframe").src = page;
+            }
+        }
+    }
+    /*end*/
+    $(function() {
+        ReloadIframe(); leftMenuOnload();
+    });
+    
+</script>
+</head>
+
+<body onload="changeMenu02(1);changelc();">
+
+<!--header-->
+<div class="main">
+	<iframe id="header" src="列表页/header.html" width="1024" height="186" allowtransparency="true" scrolling="no" frameborder="0"></iframe>
+</div>
+<!--header-->
+
+<!--content-->
+<div class="content_yxgk main clearfix mt30">
+	<div class="yxgk_left listmenu fl" id="yxgk_left">
+    	<div class="yl_tit">
+        	<p>教学管理</p>
+        </div>
+        <div class="yl_menu" style="height: 609px;">
+        	<ul class="ylm_ul" id="ylm_ul">
+            	<li class="ylm_ulon"><a href="http://insurance.uibe.edu.cn/html/contentlist.aspx?TypeID=26" target="mainiframe" onclick="changelfmn(0);changemenu2j(99)" onfocus="blur()">教务公告</a></li>
+                <li class="ylm_uloff" style="height:auto;"><a href="http://insurance.uibe.edu.cn/html/contentlist.aspx?TypeID=30" target="mainiframe" onclick="changelfmn(1);changemenu2j(0)" onfocus="blur()">下载专区</a>
+ 					<div class="menu2j submenu" id="menu2j">
+                    	<a href="http://insurance.uibe.edu.cn/html/contentlist.aspx?TypeID=30" target="mainiframe" onclick="changelfmn(1);changemenu2j(0)" onfocus="blur()">一般下载</a>
+                        <a href="http://insurance.uibe.edu.cn/html/contentlist.aspx?TypeID=31" target="mainiframe" onclick="changelfmn(1);changemenu2j(1)" onfocus="blur()">校历下载</a>
+                        <a href="http://insurance.uibe.edu.cn/html/contentlist.aspx?TypeID=32" target="mainiframe" onclick="changelfmn(1);changemenu2j(2)" onfocus="blur()">本科毕业论文下载</a>
+                        <a href="http://insurance.uibe.edu.cn/html/contentlist.aspx?TypeID=33" target="mainiframe" onclick="changelfmn(1);changemenu2j(3)" onfocus="blur()">论文/考试通知</a>
+                    </div>
+                </li>
+                <li class="ylm_uloff"><a href="http://insurance.uibe.edu.cn/html/contentlist.aspx?TypeID=28" target="mainiframe" onclick="changelfmn(2);changemenu2j(99)" onfocus="blur()">培养方案</a></li>
+                <li class="ylm_uloff"><a href="http://insurance.uibe.edu.cn/html/contentlist.aspx?TypeID=29" target="mainiframe" onclick="changelfmn(3);changemenu2j(99)" onfocus="blur()">管理规定</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="yxgk_right fr">
+    	<iframe id="mainiframe" name="mainiframe" src="列表页/contentlist.html" width="100%" scrolling="no" frameborder="0" onload="adjustFrameSize(&#39;mainiframe&#39;)" style="height: 640px; width: 814px;"></iframe>
+    </div>
+</div>
+<!--content-->
+
+<!--footer-->
+<div class="mt30">
+	<iframe src="列表页/footer.html" width="100%" height="435" scrolling="no" frameborder="0" allowtransparent="true"></iframe>
+</div>
+<!--footer-->
+
+
+
+</body></html>

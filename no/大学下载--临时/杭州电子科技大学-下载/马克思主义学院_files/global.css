@@ -1,0 +1,70 @@
+﻿/*
+	Name:TuzhiStyle v1.0 -CSS Framework
+	Author: Chen Haifei
+	Styles updated:Dec. 08.12.11@14:45 a.m.
+*/
+
+/*=Layouts
+---------------------------------*/
+@charset "utf-8";
+/* CSS Document */
+@import url(global_res/layout.css);
+#page {text-align:left;margin:0 auto;overflow:hidden; background:url(global_res/bg.jpg) no-repeat center bottom;}
+* { margin:0; padding:0;}
+body { font-size:12px; font-family: "Microsoft YaHei",sans-serif;}
+html { height:100%;margin-bottom:1px;}
+h1,h2,h3,h4,h5,h6{ font-size:12px;}
+ul { list-style:none;}
+img { border:none;}
+em,cite { font-style:normal;}
+table { border-collapse:collapse; border-spacing:0;}
+
+/*=Forms
+----------------------------------*/
+input,
+select { vertical-align:middle; font-size:12px}
+.input_text {color:#CCC;}
+.input_text_focus { color:#000; border:1px solid #FF0096;}
+.input_button { cursor:pointer;}
+
+/*=Links
+----------------------------------*/
+
+a { text-decoration:none; color:#555555}
+a:hover { text-decoration:none; color:#FF6600}
+.rar,
+.doc,
+.pdf,
+.rss,
+.http,
+.mail { padding-right:20px; background-repeat:no-repeat; background-position:0 0;}
+
+.rar { background:url(http://marxnew.hdu.edu.cn/skins/hdmks/css/css/img/rar.gif);}
+.doc { background:url(http://marxnew.hdu.edu.cn/skins/hdmks/css/css/img/word.gif);}
+.pdf { background:url(http://marxnew.hdu.edu.cn/skins/hdmks/css/css/img/pdf.gif);}
+.rss { background:url(http://marxnew.hdu.edu.cn/skins/hdmks/css/css/img/rss.gif);}
+.http { background:url(http://marxnew.hdu.edu.cn/skins/hdmks/css/css/img/http.gif);}
+.mail { background:url(http://marxnew.hdu.edu.cn/skins/hdmks/css/css/img/mail.gif);}
+
+/*=Margin
+----------------------------------*/
+.mt5px { margin-top:5px;}
+.mt8px { margin-top:8px;}
+.mt12px { margin-top:12px;}
+.mr3px { margin-right:3px;}
+.mr5px { margin-right:5px;}
+.mr12px { margin-right:12px;}
+.mb10px{ margin-bottom:10px;}
+.pl15{ padding-left:15px;}
+.pl30{ padding-left:30px;}
+/*=Hocks
+----------------------------------*/
+.clear { clear:both;}
+/*=color
+----------------------------------*/
+.red,.red a{ color:#F00}
+/*=font-size
+----------------------------------*/
+.fz24{ font-size:24px; font-family:Arial, Helvetica, sans-serif;}
+.fz14{ font-size:14px;}
+.money{ margin-left:10px;background:url(http://marxnew.hdu.edu.cn/skins/hdmks/images/money.gif) no-repeat left center; padding-left:10px;}

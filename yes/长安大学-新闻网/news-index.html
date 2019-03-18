@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>新闻网</title>
+
+    <link type="text/css" href="css/system.css" rel="stylesheet"/>
+    <link type="text/css" href="css/1.css" rel="stylesheet"/>
+    <link type="text/css" href="css/23.css" rel="stylesheet"/>
+    <LINK href="css/system.css" type="text/css" rel="stylesheet">
+    <LINK href="css/default.css" type="text/css" rel="stylesheet">
+    <link type="text/css" href="css/simplenews.css" rel="stylesheet" />
+    <link type="text/css" href="css/sudyNav.css" rel="stylesheet" />
+    <link type="text/css" href="css/datepicker.css" rel="stylesheet" />
+
+    <script language="javascript" src="js/jquery.min.js" sudy-wp-context="" sudy-wp-siteId="30"></script>
+    <script language="javascript" src="js/jquery.sudy.wp.visitcount.js"></script>
+    <script type="text/javascript" src="js/jquery.sudyNav.js"></script>
+    <script type="text/javascript" src="js/jquery.datepicker.js"></script>
+    <script type="text/javascript" src="js/datepicker_lang_HK.js"></script>
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/extends.css" rel="stylesheet">
+    <script type="text/javascript" src="js/extends.js"></script>
+    <script type="text/javascript" >
+        $(function(){
+            $("#focus11").sudyfocus({
+                p: 11, // 窗口号或频道号
+                title: {
+                    active: true, // 是否显示标题
+                    isAutoWidth: false, // 标题背景自动宽度
+                    href: false // 标题是否加文章链接
+                },
+                text: {
+                    active: true, // 是否显示文章简介
+                    isAutoHeight: true, // 简介背景自动高度
+                    href: false // 简介是否加文章链接
+                },
+                href: true, // 图片是否加链接
+                zWidth: 312, // 窗口宽度
+                zHeight: 218, // 窗口高度
+                response: false, // 是否自适应缩放
+                navigation: true, // 是否显示按钮，上一张、下一张
+                isNavHover: true, // 导航按钮是否默认隐藏，鼠标经过时再显示
+                pagination: true, // 是否显示按钮，1、2、3、4...
+                effect: 'fade', // slide(滑动),fade(淡入),show(即显)
+                crossfade: true, // 是否交叉淡入淡出
+                start: 1, // 默认从第一个开始切换
+                autoPlay: true, // 是否自动播放
+                interval: 5000, // 自动播放时间间隔
+                thumbnail: true // 是否显示缩略图 
+            });
+        });
+    </script>
+    <link href="css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="extends/libs/html5.js"></script>
+    <link href="css/ie.css" rel="stylesheet">
+    <![endif]-->
+
+    <!--[if lt IE 7]>
+    <script src="extends/libs/pngfix.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('.site-logo,.search-submit')
+    </script>
+    <![endif]-->
+</head>
+<body class="wp-main-page">
+<!--头部开始-->
+<div class="wp-wrapper wp-header">
+    <div class="wp-inner clearfix">
+
+        <!--logo开始-->
+        <div class="wp-panel logo-panel panel-1" frag="面板1"> <a class="navi-aside-toggle"></a>
+            <div class="wp-window logo-window window-1" frag="窗口1" portletmode="simpleSiteAttri">
+                <a class="site-url" href="/main.htm"><img class="site-logo" src="images/logo.png"></a>
+            </div>
+        </div>
+        <!--//logo结束-->
+        <!--搜索开始-->
+        <div class="wp-panel search-panel panel-3" frag="面板3">
+            <div class="wp-window search-window window-3" frag="窗口3" portletmode="search">
+                <div class="wp-search clearfix">
+                    <form method="post" action="/_web/search/doSearch.do?_p=YXM9MzAmdD0zOCZkPTExNiZwPTEmbT1TTiY_" target="_blank">
+                        <div class="search-input">
+                            <input class="search-title" name="keyword" type="text" placeholder="搜索">
+                        </div>
+                        <div class="search-btn">
+                            <input class="search-submit" name="submit" type="submit" value="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--//搜索结束-->
+
+    </div>
+</div>
+<!--//头部结束-->
+
+<!--导航开始-->
+<div class="wp-wrapper wp-navi">
+    <div class="wp-inner clearfix">
+        <div class="wp-panel main-nav-panel panel-2" frag="面板2">
+            <div class="wp-window main-nav-window window-2" frag="窗口2">
+                <div id="wp_nav_w2">
+
+                    <div class="navi-slide-head">
+                        <h3 class="navi-slide-title">导航</h3>
+                        <a class="navi-slide-arrow"></a> </div>
+
+                    <ul class="wp-menu clearfix" data-nav-aside='{"title":"导航","index":0}'>
+
+                        <li class="menu-item i1"><a class="menu-link" href="/300/list.htm" target="_self">学校要闻</a>
+
+                        </li>
+
+                        <li class="menu-item i2"><a class="menu-link" href="/301/list.htm" target="_self">综合新闻</a>
+
+                        </li>
+
+                        <li class="menu-item i3"><a class="menu-link" href="/xsxx1/list.htm" target="_self">教学科研</a>
+
+                        </li>
+
+                        <li class="menu-item i4"><a class="menu-link" href="/303/list.htm" target="_self">校园经纬</a>
+
+                        </li>
+
+                        <li class="menu-item i5"><a class="menu-link" href="/304/list.htm" target="_self">校史钩沉</a>
+
+                        </li>
+
+                        <li class="menu-item i6"><a class="menu-link" href="/305/list.htm" target="_self">长大人物</a>
+
+                        </li>
+
+                        <li class="menu-item i7"><a class="menu-link" href="/306/list.htm" target="_self">图片网</a>
+
+                        </li>
+
+                        <li class="menu-item i8"><a class="menu-link" href="/307/list.htm" target="_self">媒体聚焦</a>
+
+                        </li>
+
+                        <li class="menu-item i9"><a class="menu-link" href="/308/list.htm" target="_self">电视新闻</a>
+
+                        </li>
+
+                        <li class="menu-item i10"><a class="menu-link" href="http://photo.chd.edu.cn/" target="_blank">长大影像</a>
+
+                        </li>
+
+                        <li class="menu-item i11"><a class="menu-link" href="/310/list.htm" target="_self">视频专题</a>
+
+                        </li>
+
+                        <li class="menu-item i12"><a class="menu-link" href="/311/list.htm" target="_self">电子校报</a>
+
+                        </li>
+
+                        <li class="menu-item i13"><a class="menu-link" href="/312/list.htm" target="_self">理论园地</a>
+
+                        </li>
+
+                        <li class="menu-item i14"><a class="menu-link" href="/313/list.htm" target="_self">视频网</a>
+
+                        </li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+        <!--副导航开始-->
+        <div class="wp-panel top-nav-panel panel-3">
+            <div class="wp-window top-nav-window window-3 clearfix"> <a class="menu-link" href="http://webplus.chd.edu.cn/login.jsp?_p=YXM9MzAmdD0zOCZwPTEmbT1OJg__" target="_blank"><img src="images/wytg.png"></a><a class="menu-link" href="/00/00/c327a0/page.htm" target="_blank"><img src="images/tgbm.png"></a> </div>
+        </div>
+        <!--//副导航结束-->
+    </div>
+</div>
+
+<!--aside导航-->
+<div class="wp-navi-aside" id="wp-navi-aside">
+    <div class="aside-inner">
+        <div class="navi-aside-wrap"></div>
+    </div>
+    <div class="navi-aside-mask"></div>
+</div>
+<!--//导航结束-->
+
+<!--大图开始-->
+<div class="wp-wrapper wp-focus">
+    <div class="wp-inner">
+        <div class="wp-panel fcous-panel panel-4" frag="面板4">
+            <div class="wp-window focus-window window-4" frag="窗口4">
+                <div id="wp_news_w4">
+                  <!--  <div class="focus" data-focus>
+
+                        <img src="images/69e88bf9-6da5-477f-87a2-f26c316f2cdd.jpg" data-focus-title="<a href='/2017/0401/c316a1033/page.htm' target='_blank' title='图片新闻3'>图片新闻3</a>" data-focus-url="/2017/0401/c316a1033/page.htm">
+
+                        <img src="images/266c893c-0a16-4cc4-976c-e9835255f359.jpg" data-focus-title="<a href='/2017/0401/c316a1032/page.htm' target='_blank' title='图片新闻2'>图片新闻2</a>" data-focus-url="/2017/0401/c316a1032/page.htm">
+
+                        <img src="images/3cffb5b6-590f-425c-b066-3ef15989b371.jpg" data-focus-title="<a href='/2017/0401/c316a1031/page.htm' target='_blank' title='图片新闻1'>图片新闻1</a>" data-focus-url="/2017/0401/c316a1031/page.htm">
+
+                    </div>-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--//大图结束-->
+
+<!--主体开始-->
+<div class="wp-wrapper wp-container">
+    <div class="wp-inner clearfix">
+        <div class="content clearfix">
+            <div class="cbox-left">
+                <div class="cbox_1 clearfix">
+                    <div class="cbox_1_l fl" frag="面板11">
+                        <div frag="窗口11">
+                            <div class="con">
+                                <!-- JSON列表 -->
+                                <script language="JavaScript" class="" >
+                                    var w11imgJsons = [
+
+
+                                        {
+                                            "src": "images/394a1c95-7b8d-4091-af50-296e2d7c2792_s.jpg",
+                                            "original": "images/394a1c95-7b8d-4091-af50-296e2d7c2792.jpg",
+                                            "title": "2019新春贺词丨携手新时代&nbsp;...",
+                                            "url": "/2019/0203/c300a55402/page.htm"
+                                        },
+
+
+
+                                        {
+                                            "src": "images/c99ed4b4-66e0-4739-ab93-124fe6933b9c_s.jpg",
+                                            "original": "images/c99ed4b4-66e0-4739-ab93-124fe6933b9c.jpg",
+                                            "title": "校领导带队慰问除夕在岗值班人员",
+                                            "url": "/2019/0202/c300a55397/page.htm"
+                                        },
+
+
+
+                                        {
+                                            "src": "images/e2f01927-9191-4581-acd5-ac4c243c2b41_s.jpg",
+                                            "original": "images/e2f01927-9191-4581-acd5-ac4c243c2b41.jpg",
+                                            "title": "校领导带队慰问寒假留校学生",
+                                            "url": "/2019/0202/c300a55396/page.htm"
+                                        }
+
+
+                                    ];
+                                </script>
+                            </div>
+                        </div>
+                        <div id="focus11" class="focus-box" style="width: 312px; height: 218px;">
+                         <!--   <div class="focus-container" style="width: 312px; height: 218px; visibility: visible;">
+                                <div class="focus-item" style="display: none;"><a href="/2019/0203/c300a55402/page.htm" target="_blank"><img src="images/394a1c95-7b8d-4091-af50-296e2d7c2792.jpg"></a></div>
+                                <div class="focus-item" style="display: block;"><a href="/2019/0202/c300a55397/page.htm" target="_blank"><img src="images/c99ed4b4-66e0-4739-ab93-124fe6933b9c.jpg"></a></div>
+                                <div class="focus-item" style="display: none;"><a href="/2019/0202/c300a55396/page.htm" target="_blank"><img src="images/e2f01927-9191-4581-acd5-ac4c243c2b41.jpg"></a></div>
+                            </div>
+                            <div class="focus-title-bar" style="display: block;"><div class="focus-title-bg"></div><h2 class="focus-title">校领导带队慰问除夕在岗值班人员</h2></div><div class="focus-text-box" style="display: none; height: 20px;">
+                            <div class="focus-text-bg"></div>
+                            <div class="focus-text-inner"><p class="focus-text" style=""></p></div></div><a class="focus-navigation focus-prev" style="display: none;">&lt;</a><a class="focus-navigation focus-next" style="display: none;">&gt;</a>
+                            <div class="focus-pagination"><a class="focus-page focus-page-1"><span>1</span></a><a class="focus-page focus-page-2 focus-page-active"><span>2</span></a><a class="focus-page focus-page-3"><span>3</span></a></div>
+                            <div class="focus-thumbnail"><a class="focus-thumb focus-thumb-1"><span>
+                                <img src="images/394a1c95-7b8d-4091-af50-296e2d7c2792_s.jpg"></span></a><a class="focus-thumb focus-thumb-2 focus-thumb-active"><span>
+                                <img src="images/c99ed4b4-66e0-4739-ab93-124fe6933b9c_s.jpg"></span></a><a class="focus-thumb focus-thumb-3"><span>
+                                <img src="images/e2f01927-9191-4581-acd5-ac4c243c2b41_s.jpg"></span></a>
+                            </div>-->
+                        </div>
+                    </div>
+                    <div class="cbox_1_r fr" frag="面板12">
+                        <div class="wp-post post-12" frag="窗口12">
+                            <div class="post-head">
+                                <div class="head-bar">
+                                    <h3 class="post-title" frag="标题">学校要闻</h3>
+                                    <div class="post-more" frag="按钮" type="更多"><a href="/300/list.htm" class="w12_more"><span frag="按钮内容">更多...</span></a></div>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div id="wp_news_w12">
+
+
+                                    <div class="news1">
+                                        <div class="news1_tt"><a href='/2019/0203/c300a55402/page.htm' target='_blank' title='2019新春贺词丨携手新时代 逐梦新征程  奋力开创世界一流大学建设新局面'>2019新春贺词丨携手新时代 逐梦新征程 ...</a></div>
+                                        <div class="news1_intro">老师们、同学们、校友们、朋友们：玉犬辞旧岁，金猪迎新春。在这阖家团圆的美好时刻，我们谨代表长安大学，向全体师生员工、离退...</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="wp-post post-13" frag="窗口13">
+                            <div class="post-body">
+                                <div id="wp_news_w13">
+
+
+                                    <div class="news_tit n1"><a href='/2019/0203/c300a55401/page.htm' target='_blank' title='学校召开专题会议安排部署寒假校园安全和环境卫生工作'>学校召开专题会议安排部署寒假校园安全和环境卫生工作</a></div>
+
+                                    <div class="news_tit n2"><a href='/2019/0202/c300a55399/page.htm' target='_blank' title='中共陕西省委组织部向我校发来感谢信'>中共陕西省委组织部向我校发来感谢信</a></div>
+
+                                    <div class="news_tit n3"><a href='/2019/0202/c300a55397/page.htm' target='_blank' title='校领导带队慰问除夕在岗值班人员'>校领导带队慰问除夕在岗值班人员</a></div>
+
+                                    <div class="news_tit n4"><a href='/2019/0202/c300a55396/page.htm' target='_blank' title='校领导带队慰问寒假留校学生'>校领导带队慰问寒假留校学生</a></div>
+
+                                    <div class="news_tit n5"><a href='/2019/0201/c300a55391/page.htm' target='_blank' title='校领导带队赴商南县开展扶贫慰问送温暖活动'>校领导带队赴商南县开展扶贫慰问送温暖活动</a></div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cbox_2 clearfix">
+                    <div class="cbox_2_r clearfix fl" frag="面板14">
+                        <div class="wp-post post-14" frag="窗口14">
+                            <div class="post-head">
+                                <div class="head-bar">
+                                    <h3 class="post-title" frag="标题">综合新闻</h3>
+                                    <div class="post-more" frag="按钮" type="更多"><a href="/301/list.htm" class="w14_more"><span frag="按钮内容">更多...</span></a></div>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div id="wp_news_w14">
+
+
+                                    <div class="news2 clearfix">
+                                        <div class="news2_pic fl"><a href='/2019/0129/c301a55393/page.htm' target='_blank' title='资产经营公司召开2018年度总结暨表彰大会'><img src='images/b0047e0d-78ca-4f2e-8c27-ea3b76658d16.jpg' width='138' height='97'></a></div>
+                                        <div class="news2_tt fr"><a href='/2019/0129/c301a55393/page.htm' target='_blank' title='资产经营公司召开2018年度总结暨表彰大会'>资产经营公司召开2018年度总结暨表彰大会</a></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="wp-post post-15" frag="窗口15">
+                            <div class="post-body">
+                                <div id="wp_news_w15">
+
+
+                                    <div class="news_tit n1"><a href='/2019/0129/c301a55393/page.htm' target='_blank' title='资产经营公司召开2018年度总结暨表彰大会'>资产经营公司召开2018年度总结暨表彰大会</a></div>
+
+                                    <div class="news_tit n2"><a href='/2019/0115/c301a55388/page.htm' target='_blank' title='我校“大学生生命教育工作室”入选第二批陕西高校辅导员工作室建设单位'>我校“大学生生命教育工作室”入选第二批陕西高校辅导...</a></div>
+
+                                    <div class="news_tit n3"><a href='/2019/0111/c301a55349/page.htm' target='_blank' title='我校教师获2018年度陕西省科技统计工作先进个人称号'>我校教师获2018年度陕西省科技统计工作先进个人称号</a></div>
+
+                                    <div class="news_tit n4"><a href='/2019/0119/c301a55338/page.htm' target='_blank' title='我校离退休职工“迎新春 猜灯谜”活动圆满举办'>我校离退休职工“迎新春 猜灯谜”活动圆满举办</a></div>
+
+                                    <div class="news_tit n5"><a href='/2019/0118/c301a55322/page.htm' target='_blank' title='我校“迎新春、送祝福、写春联”活动圆满结束'>我校“迎新春、送祝福、写春联”活动圆满结束</a></div>
+
+                                    <div class="news_tit n6"><a href='/2019/0116/c301a55313/page.htm' target='_blank' title='长安大学“青马学校”组织学生骨干赴延安开展学习实践活动'>长安大学“青马学校”组织学生骨干赴延安开展学习实践...</a></div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbox_2_r clearfix fr" frag="面板16">
+                        <div class="wp-post post-16" frag="窗口16">
+                            <div class="post-head">
+                                <div class="head-bar">
+                                    <h3 class="post-title" frag="标题">教学科研</h3>
+                                    <div class="post-more" frag="按钮" type="更多"><a href="/xsxx1/list.htm" class="w16_more"><span frag="按钮内容">更多...</span></a></div>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div id="wp_news_w16">
+
+
+                                    <div class="news2 clearfix">
+                                        <div class="news2_pic fl"><a href='/2019/0127/c535a55371/page.htm' target='_blank' title='陕西省古生物学会2019学术研讨会暨2018总结年会在我校举办'><img src='images/b885fb35-232f-48a7-bb73-6873bd5c267f.png' width='138' height='97'></a></div>
+                                        <div class="news2_tt fr"><a href='/2019/0127/c535a55371/page.htm' target='_blank' title='陕西省古生物学会2019学术研讨会暨2018总结年会在我校举办'>陕西省古生物学会2019学术研讨会暨2018总结年会在我校...</a></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="wp-post post-17" frag="窗口17">
+                            <div class="post-body">
+                                <div id="wp_news_w17">
+
+
+                                    <div class="news_tit n1"><a href='/2019/0127/c535a55371/page.htm' target='_blank' title='陕西省古生物学会2019学术研讨会暨2018总结年会在我校举办'>陕西省古生物学会2019学术研讨会暨2018总结年会在我校...</a></div>
+
+                                    <div class="news_tit n2"><a href='/2019/0114/c535a55267/page.htm' target='_blank' title='“虹”学讲堂举办第148讲    港珠澳大桥管理局苏权科总工程师作报告'>“虹”学讲堂举办第148讲    港珠澳大桥管理局苏权科...</a></div>
+
+                                    <div class="news_tit n3"><a href='/2018/1225/c535a53455/page.htm' target='_blank' title='“虹”学讲堂举办第145讲    新加坡南洋理工大学Dr. Wong Choon Yue研究员作报告'>“虹”学讲堂举办第145讲    新加坡南洋理工大学Dr. W...</a></div>
+
+                                    <div class="news_tit n4"><a href='/2018/1225/c535a53438/page.htm' target='_blank' title='我校丁华教授及其团队负责制定的八项陕西省地方标准正式发布'>我校丁华教授及其团队负责制定的八项陕西省地方标准正...</a></div>
+
+                                    <div class="news_tit n5"><a href='/2018/1220/c535a53401/page.htm' target='_blank' title='“虹”学讲堂举办第144讲 我校黄蜺教授作报告'>“虹”学讲堂举办第144讲 我校黄蜺教授作报告</a></div>
+
+                                    <div class="news_tit n6"><a href='/2018/1212/c535a53399/page.htm' target='_blank' title='“虹”学讲堂举办第143讲    密苏里大学堪萨斯分校Reza R. Derakhshani博士作报告'>“虹”学讲堂举办第143讲    密苏里大学堪萨斯分校Rez...</a></div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cbox_2 clearfix">
+                    <div class="cbox_2_r clearfix fl" frag="面板18">
+                        <div class="wp-post post-18" frag="窗口18">
+                            <div class="post-head">
+                                <div class="head-bar">
+                                    <h3 class="post-title" frag="标题">校园经纬</h3>
+                                    <div class="post-more" frag="按钮" type="更多"><a href="/303/list.htm" class="w18_more"><span frag="按钮内容">更多...</span></a></div>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div id="wp_news_w18">
+
+
+                                    <div class="news2 clearfix">
+                                        <div class="news2_pic fl"><a href='/2019/0130/c303a55392/page.htm' target='_blank' title='马克思主义学院走访本科生校外实习基地'><img src='images/42d4da78-5081-46ff-b170-8c6efe2a5919.jpg' width='138' height='97'></a></div>
+                                        <div class="news2_tt fr"><a href='/2019/0130/c303a55392/page.htm' target='_blank' title='马克思主义学院走访本科生校外实习基地'>马克思主义学院走访本科生校外实习基地</a></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="wp-post post-19" frag="窗口19">
+                            <div class="post-body">
+                                <div id="wp_news_w19">
+
+
+                                    <div class="news_tit n1"><a href='/2019/0130/c303a55392/page.htm' target='_blank' title='马克思主义学院走访本科生校外实习基地'>马克思主义学院走访本科生校外实习基地</a></div>
+
+                                    <div class="news_tit n2"><a href='/2019/0116/c303a55351/page.htm' target='_blank' title='公管学院召开科研总结暨国家社科基金项目动员会'>公管学院召开科研总结暨国家社科基金项目动员会</a></div>
+
+                                    <div class="news_tit n3"><a href='/2019/0117/c303a55350/page.htm' target='_blank' title='信息工程学院召开2018年度总结表彰大会'>信息工程学院召开2018年度总结表彰大会</a></div>
+
+                                    <div class="news_tit n4"><a href='/2019/0118/c303a55348/page.htm' target='_blank' title='国际教育学院赴陕汽控股有限公司洽谈校企合作事宜'>国际教育学院赴陕汽控股有限公司洽谈校企合作事宜</a></div>
+
+                                    <div class="news_tit n5"><a href='/2019/0122/c303a55346/page.htm' target='_blank' title='公管学院召开学科暨教学、科研团队建设会议'>公管学院召开学科暨教学、科研团队建设会议</a></div>
+
+                                    <div class="news_tit n6"><a href='/2019/0116/c303a55321/page.htm' target='_blank' title='公管学院刘兰剑院长一行赴南京师范大学开展“121”项目调研'>公管学院刘兰剑院长一行赴南京师范大学开展“121”项...</a></div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbox_2_r clearfix fr" frag="面板20">
+                        <div class="wp-post post-20" frag="窗口20">
+                            <div class="post-head">
+                                <div class="head-bar">
+                                    <h3 class="post-title" frag="标题">校史钩沉</h3>
+                                    <div class="post-more" frag="按钮" type="更多"><a href="/304/list.htm" class="w20_more"><span frag="按钮内容">更多...</span></a></div>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div id="wp_news_w20">
+
+
+                                    <div class="news2 clearfix">
+                                        <div class="news2_pic fl"><a href='/2017/0427/c304a16462/page.htm' target='_blank' title='从建校到合校：谁持彩练当空舞'><img src='images/7f185fbf-7f21-4d71-9f93-b5a0c025dc7d.jpg' width='138' height='97'></a></div>
+                                        <div class="news2_tt fr"><a href='/2017/0427/c304a16462/page.htm' target='_blank' title='从建校到合校：谁持彩练当空舞'>从建校到合校：谁持彩练当空舞</a></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="wp-post post-21" frag="窗口21">
+                            <div class="post-body">
+                                <div id="wp_news_w21">
+
+
+                                    <div class="news_tit n1"><a href='/2017/0427/c304a19742/page.htm' target='_blank' title='教育部、交通部共建长安大学：共建花开大会堂'>教育部、交通部共建长安大学：共建花开大会堂</a></div>
+
+                                    <div class="news_tit n2"><a href='/2017/1114/c304a41103/page.htm' target='_blank' title='【回顾“十二五”系列报道】资源配置与基础保障建设'>【回顾“十二五”系列报道】资源配置与基础保障建设</a></div>
+
+                                    <div class="news_tit n3"><a href='/2017/1114/c304a41101/page.htm' target='_blank' title='【回顾“十二五”系列报道】推进教育教学综合改革  培育全面发展优秀人才'>【回顾“十二五”系列报道】推进教育教学综合改革  培...</a></div>
+
+                                    <div class="news_tit n4"><a href='/2017/0602/c304a27242/page.htm' target='_blank' title='国际交往铸传奇'>国际交往铸传奇</a></div>
+
+                                    <div class="news_tit n5"><a href='/2017/0427/c304a19831/page.htm' target='_blank' title='在申办“211”的背后'>在申办“211”的背后</a></div>
+
+                                    <div class="news_tit n6"><a href='/2017/0427/c304a19579/page.htm' target='_blank' title='办学路上的北京拐弯'>办学路上的北京拐弯</a></div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cbox_3 clearfix">
+                    <div class="cbox_3_c" frag="面板24">
+                        <div class="wp-post post-24" frag="窗口24">
+                            <div class="post-body">
+                                <div class="articlecontent " >
+
+
+
+                                    <p><img data-layer="photo" src="images/a7d64451-9e17-436a-9f06-fc309f093092.jpg" style="float:none;width:100%;" sudyfile-attr="{'title':'zt.jpg'}" /></p>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cbox_2 clearfix">
+                    <div class="cbox_2_r clearfix fl" frag="面板22">
+                        <div class="wp-post post-22" frag="窗口22">
+                            <div class="post-head">
+                                <div class="head-bar">
+                                    <h3 class="post-title" frag="标题">长大人物</h3>
+                                    <div class="post-more" frag="按钮" type="更多"><a href="/305/list.htm" class="w22_more"><span frag="按钮内容">更多...</span></a></div>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div id="wp_news_w22">
+
+
+                                    <div class="news_tit n1"><a href='/2018/1008/c305a51328/page.htm' target='_blank' title='【陕西省高等学校教学名师】宋绪丁：牢记使命 潜心教学 培养特色鲜明的创新型人才'>【陕西省高等学校教学名师】宋绪丁：牢记使命 潜心教...</a></div>
+
+                                    <div class="news_tit n2"><a href='/2018/0917/c305a51039/page.htm' target='_blank' title='【陕西省高等学校教学名师】王元庆：双语教学翻转课堂 让专业学习活起来'>【陕西省高等学校教学名师】王元庆：双语教学翻转课堂...</a></div>
+
+                                    <div class="news_tit n3"><a href='/2018/0419/c305a47136/page.htm' target='_blank' title='王春生：走在时代前列的钢桥安全守卫者'>王春生：走在时代前列的钢桥安全守卫者</a></div>
+
+                                    <div class="news_tit n4"><a href='/2018/0404/c305a46799/page.htm' target='_blank' title='裴建中：做能感知会呼吸自修复的智慧道路'>裴建中：做能感知会呼吸自修复的智慧道路</a></div>
+
+                                    <div class="news_tit n5"><a href='/2018/0118/c305a45652/page.htm' target='_blank' title='卓越，源自执着创新——“全国黄大年式教师团队”炼成记'>卓越，源自执着创新——“全国黄大年式教师团队”炼成记</a></div>
+
+                                    <div class="news_tit n6"><a href='/2017/1206/c305a42899/page.htm' target='_blank' title='《中国公路》：振动搅拌，搅动行业——记德通振动搅拌技术与设备发明人冯忠绪及其科研团队'>《中国公路》：振动搅拌，搅动行业——记德通振动搅拌技...</a></div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cbox_2_r clearfix fr" frag="面板23">
+                        <div class="wp-post post-23" frag="窗口23">
+                            <div class="post-head">
+                                <div class="head-bar">
+                                    <h3 class="post-title" frag="标题">理论园地</h3>
+                                    <div class="post-more" frag="按钮" type="更多"><a href="/312/list.htm" class="w23_more"><span frag="按钮内容">更多...</span></a></div>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div id="wp_news_w23">
+
+
+                                    <div class="news_tit n1"><a href='/_upload/article/files/aa/c2/4e7143ff4604bf90c505795b9515/62281e25-0af2-41c8-bc75-91c896c8956a.pdf' target='_blank' title='《学习与思考》总第76期（2018第1期）'>《学习与思考》总第76期（2018第1期）</a></div>
+
+                                    <div class="news_tit n2"><a href='/_upload/article/files/b3/7e/85e5130945b183e547cf942f5e0c/121f5dba-5498-4498-af05-cf8ec1cb23b9.pdf' target='_blank' title='《学习与思考》总第75期（2017第6期）'>《学习与思考》总第75期（2017第6期）</a></div>
+
+                                    <div class="news_tit n3"><a href='/_upload/article/files/dc/c6/bb1aac3744c4a51ea140c6bffc1c/7ebbfed0-d214-4dc6-9da0-bd23bed965d8.pdf' target='_blank' title='《学习与思考》总第74期（2017第5期）'>《学习与思考》总第74期（2017第5期）</a></div>
+
+                                    <div class="news_tit n4"><a href='/_upload/article/files/f6/37/1e1e95124b568907c9e23f45994d/0b96b279-7eb9-481d-8af5-b47678e38d56.pdf' target='_blank' title='《学习与思考》总第73期(2017第4期)'>《学习与思考》总第73期(2017第4期)</a></div>
+
+                                    <div class="news_tit n5"><a href='/_upload/article/files/2b/6f/8cc205ea46739f35265eb7910df5/4de9884f-e02e-4792-9cb2-32d868565b8e.pdf' target='_blank' title='《学习与思考》第72期（2017年第3期）'>《学习与思考》第72期（2017年第3期）</a></div>
+
+                                    <div class="news_tit n6"><a href='/_upload/article/files/9b/14/ab4dbcb14e8bba6d77adbbb444ab/8bda78cc-7086-4540-aefe-e513a8100f7c.pdf' target='_blank' title='《学习与思考》第71期（2017年第2期）'>《学习与思考》第71期（2017年第2期）</a></div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cbox-right">
+                <div class="cbox_2_r clearfix" frag="面板25">
+                    <div class="wp-post post-25" frag="窗口25">
+                        <div class="post-head">
+                            <div class="head-bar">
+                                <h3 class="post-title" frag="标题">媒体聚焦</h3>
+                                <div class="post-more" frag="按钮" type="更多"><a href="/307/list.htm" class="w25_more"><span frag="按钮内容">更多...</span></a></div>
+                            </div>
+                        </div>
+                        <div class="post-body">
+                            <!-- JSON列表 -->
+                            <script language="JavaScript" class="" >
+                                var w25imgJsons = [
+
+
+                                    {
+                                        "src": "/_upload/article/images/0d/ad/63df67ff4afeb335977c1db24583/d3b86d98-03a7-4e99-8422-3abcbe0b772e.png",
+                                        "original": "/_upload/article/images/0d/ad/63df67ff4afeb335977c1db24583/d3b86d98-03a7-4e99-8422-3abcbe0b772e.png",
+                                        "title": "中国交通报：《积聚科研优势力量...",
+                                        "url": "/2019/0102/c307a53561/page.htm"
+                                    },
+
+
+
+                                    {
+                                        "src": "/_upload/article/images/f5/22/a45a80f3494ab1028a834a840afd/bab96c91-173e-4ff9-bdbc-5cd63bb6e26b.png",
+                                        "original": "/_upload/article/images/f5/22/a45a80f3494ab1028a834a840afd/bab96c91-173e-4ff9-bdbc-5cd63bb6e26b.png",
+                                        "title": "中国交通报：《从“口传心授”到...",
+                                        "url": "/2018/1210/c307a53229/page.htm"
+                                    },
+
+
+
+                                    {
+                                        "src": "/_upload/article/images/61/d4/bd01f99242a586d813f5a5b66769/34f5f277-aaac-4fdc-a7ec-4b9e30879422.jpg",
+                                        "original": "/_upload/article/images/61/d4/bd01f99242a586d813f5a5b66769/34f5f277-aaac-4fdc-a7ec-4b9e30879422.jpg",
+                                        "title": "人民网等多家媒体报道我校地测学...",
+                                        "url": "/2018/1129/c307a52818/page.htm"
+                                    }
+
+
+                                ];
+                            </script>
+
+
+                            <div class="focus25"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="wp-post post-26" frag="窗口26">
+                        <div class="post-body">
+                            <div id="wp_news_w26">
+
+
+                                <div class="news_tit n1"><a href='/2019/0211/c307a55404/page.htm' target='_blank' title='多家媒体报道我校“梦起长安·探知地球 与杰青校友面对面” 访谈活动'>多家媒体报道我校“梦起长安·探知地球 与杰...</a></div>
+
+                                <div class="news_tit n2"><a href='/2019/0102/c307a53574/page.htm' target='_blank' title='多家媒体报道我校举行商南县青山镇脱贫攻坚暨乡村振兴研讨会'>多家媒体报道我校举行商南县青山镇脱贫攻坚...</a></div>
+
+                                <div class="news_tit n3"><a href='/_redirect?siteId=30&columnId=307&articleId=53570' target='_blank' title='西安晚报：《本土科研团队助力我市“海绵城市”建设  西安建成全国首条 全透水沥青路面机动车道 》'>西安晚报：《本土科研团队助力我市“海绵城...</a></div>
+
+                                <div class="news_tit n4"><a href='/2019/0102/c307a53561/page.htm' target='_blank' title='中国交通报：《积聚科研优势力量  服务交通强国建设》'>中国交通报：《积聚科研优势力量  服务交通...</a></div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cbox_2_r clearfix" frag="面板27">
+                    <div class="wp-post post-27" frag="窗口27">
+                        <div class="post-head">
+                            <div class="head-bar">
+                                <h3 class="post-title" frag="标题">电子校报</h3>
+                                <div class="post-more"><a href="http://paper.chd.edu.cn/zadxxb/list.htm" target="_blank">更多...</a></div>
+                            </div>
+                        </div>
+                        <div class="post-body">
+                            <div id="wp_news_w27">
+
+
+                                <div class="news11 n1 clearfix fl">
+                                    <div class="news11_pic"><a href='/_redirect?siteId=30&columnId=311&articleId=55053' target='_blank' title='292'><img src='images/b6f5c18f-688f-4f45-93a9-12ae777581a8.png' width='133' height='189'></a></div>
+                                </div>
+
+                                <div class="news11 n2 clearfix fl">
+                                    <div class="news11_pic"><a href='/_redirect?siteId=30&columnId=311&articleId=53550' target='_blank' title='291'><img src='images/8ec29bd4-e72e-4e05-bf3c-87198a9d00d2.png' width='133' height='189'></a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cbox_2_r clearfix" frag="面板28">
+                    <div class="wp-post post-28" frag="窗口28">
+                        <div class="post-head">
+                            <div class="head-bar">
+                                <h3 class="post-title" frag="标题">电视新闻</h3>
+                                <div class="post-more" frag="按钮" type="更多"><a href="/308/list.htm" class="w28_more"><span frag="按钮内容">更多...</span></a></div>
+                            </div>
+                        </div>
+                        <div class="post-body">
+                            <div id="wp_news_w28">
+
+
+                                <div class="news12 n1 clearfix fl">
+                                    <div class="news12_pic"><a href='/2019/0108/c308a55065/page.htm' target='_blank' title='电视新闻 第333期（12月28日）'><img src='images/d72888cd-7dc9-4307-8d5f-c97fe75c544e.jpg' width='140' height='100'></a></div>
+                                    <div class="news12_tt"><a href='/2019/0108/c308a55065/page.htm' target='_blank' title='电视新闻 第333期（12月28日）'>电视新闻 第333期（12...</a></div>
+                                </div>
+
+                                <div class="news12 n2 clearfix fl">
+                                    <div class="news12_pic"><a href='/2018/1206/c308a53174/page.htm' target='_blank' title='电视新闻 第332期（12月06日）'><img src='images/bea09d0e-b2c5-42e2-96fa-18ff434255ce.jpg' width='140' height='100'></a></div>
+                                    <div class="news12_tt"><a href='/2018/1206/c308a53174/page.htm' target='_blank' title='电视新闻 第332期（12月06日）'>电视新闻 第332期（12...</a></div>
+                                </div>
+
+                                <div class="news12 n3 clearfix fl">
+                                    <div class="news12_pic"><a href='/2018/1205/c308a53147/page.htm' target='_blank' title='电视新闻 第331期（11月30日）'><img src='images/671e3044-5f54-4b06-ba8a-11c3209961fc.jpg' width='140' height='100'></a></div>
+                                    <div class="news12_tt"><a href='/2018/1205/c308a53147/page.htm' target='_blank' title='电视新闻 第331期（11月30日）'>电视新闻 第331期（11...</a></div>
+                                </div>
+
+                                <div class="news12 n4 clearfix fl">
+                                    <div class="news12_pic"><a href='/2018/1018/c308a51616/page.htm' target='_blank' title='电视新闻 第329期（10月12日）'><img src='images/bd6c11f2-044e-4ffe-9149-8a62e62aa723.jpg' width='140' height='100'></a></div>
+                                    <div class="news12_tt"><a href='/2018/1018/c308a51616/page.htm' target='_blank' title='电视新闻 第329期（10月12日）'>电视新闻 第329期（10...</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cbox_2_r clearfix" frag="面板29">
+                    <div class="wp-post post-29" frag="窗口29">
+                        <div class="post-head">
+                            <div class="head-bar">
+                                <h3 class="post-title" frag="标题">视频专题</h3>
+                                <div class="post-more" frag="按钮" type="更多"><a href="/310/list.htm" class="w29_more"><span frag="按钮内容">更多...</span></a></div>
+                            </div>
+                        </div>
+                        <div class="post-body">
+                            <div id="wp_news_w29">
+
+
+                                <div class="news13 clearfix">
+                                    <div class="news13_pic"><a href='/2019/0205/c310a55403/page.htm' target='_blank' title='2019新春贺词---携手新时代 逐梦新征程 奋力开创世界一流大学建设新局面'><img src='images/dfe3e34b-0d9a-4cbe-9ca5-31c9abb3ed8a.jpg' width='290' height='214'></a></div>
+                                    <div class="news13_tt"><a href='/2019/0205/c310a55403/page.htm' target='_blank' title='2019新春贺词---携手新时代 逐梦新征程 奋力开创世界一流大学建设新局面'><font style='font-weight:bold;'>2019新春贺词---携手新时代 逐梦...</font></a></div>
+                                </div>
+
+                                <div class="news13 clearfix">
+                                    <div class="news13_pic"><a href='/2018/0910/c310a50867/page.htm' target='_blank' title='&quot;恩师重如山&quot;——热烈庆祝第三十四个教师节专题'><img src='images/496b0f27-bd32-40b3-82b5-25d8a3ecda4f.jpg' width='290' height='214'></a></div>
+                                    <div class="news13_tt"><a href='/2018/0910/c310a50867/page.htm' target='_blank' title='&quot;恩师重如山&quot;——热烈庆祝第三十四个教师节专题'>&quot;恩师重如山&quot;——热烈庆祝第三十四...</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="wp-post post-30" frag="窗口30">
+                        <div class="post-body">
+                            <!-- No Data -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="cbox-center">
+                <div class="cbox_2_c clearfix" frag="面板31">
+                    <div class="wp-post post-31" frag="窗口31">
+                        <div class="post-head">
+                            <div class="head-bar">
+                                <h3 class="post-title" frag="标题">长大影像</h3>
+                                <div class="post-more" frag="按钮" type="更多"><a href="http://photo.chd.edu.cn/" class="w31_more"><span frag="按钮内容">更多...</span></a></div>
+                            </div>
+                        </div>
+                        <div class="post-body">
+                            <div id="wp_news_w31">
+
+
+                                <div class="news14 n1 clearfix fl">
+                                    <div class="news14_pic"><a href='/2018/0612/c309a48725/page.htm' target='_blank' title='20180611西安市人大主任来校调研'><img src='images/24922b3d-721a-4c73-a2db-34324023c7a1.jpg' width='164' height='117'></a></div>
+                                    <div class="news14_tit"><a href='/2018/0612/c309a48725/page.htm' target='_blank' title='20180611西安市人大主任来校调研'>20180611西安市人大主任来校调研</a></div>
+                                </div>
+
+                                <div class="news14 n2 clearfix fl">
+                                    <div class="news14_pic"><a href='/2018/0531/c309a48507/page.htm' target='_blank' title='毕业合影'><img src='images/d228c461-4956-4451-a500-0c45795ea152.jpg' width='164' height='117'></a></div>
+                                    <div class="news14_tit"><a href='/2018/0531/c309a48507/page.htm' target='_blank' title='毕业合影'>毕业合影</a></div>
+                                </div>
+
+                                <div class="news14 n3 clearfix fl">
+                                    <div class="news14_pic"><a href='/2018/0531/c309a48506/page.htm' target='_blank' title='建设中的校本部教学主楼'><img src='images/0ac1a977-7def-4a95-846d-e8ef3aa4414b.jpg' width='164' height='117'></a></div>
+                                    <div class="news14_tit"><a href='/2018/0531/c309a48506/page.htm' target='_blank' title='建设中的校本部教学主楼'>建设中的校本部教学主楼</a></div>
+                                </div>
+
+                                <div class="news14 n4 clearfix fl">
+                                    <div class="news14_pic"><a href='/2018/0531/c309a48505/page.htm' target='_blank' title='西北交通干部学校旧址'><img src='images/f5256dd0-deba-4973-b0b5-0b2ae17132eb.jpg' width='164' height='117'></a></div>
+                                    <div class="news14_tit"><a href='/2018/0531/c309a48505/page.htm' target='_blank' title='西北交通干部学校旧址'>西北交通干部学校旧址</a></div>
+                                </div>
+
+                                <div class="news14 n5 clearfix fl">
+                                    <div class="news14_pic"><a href='/2018/0531/c309a48504/page.htm' target='_blank' title='草场坡最早建设的教学楼'><img src='images/abc3674b-2684-4362-9154-b8eb3c318cde.jpg' width='164' height='117'></a></div>
+                                    <div class="news14_tit"><a href='/2018/0531/c309a48504/page.htm' target='_blank' title='草场坡最早建设的教学楼'>草场坡最早建设的教学楼</a></div>
+                                </div>
+
+                                <div class="news14 n6 clearfix fl">
+                                    <div class="news14_pic"><a href='/2018/0531/c309a48503/page.htm' target='_blank' title='创建于1953年的教学工厂'><img src='images/31ec336b-c2e7-404f-ba6c-0dd3be985995.jpg' width='164' height='117'></a></div>
+                                    <div class="news14_tit"><a href='/2018/0531/c309a48503/page.htm' target='_blank' title='创建于1953年的教学工厂'>创建于1953年的教学工厂</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cbox_2_c clearfix">
+                    <div class="wp-post post-32" frag="面板32">
+                        <div class="post-body" frag="窗口32" style="margin-top: 38px;">
+                            <div class="articlecontent " >
+
+
+
+                                <p><a href="http://www.people.com.cn/" target="_blank" sudyfile-attr="{'title':'只支持选中一个链接时生效'}"><img data-layer="photo" src="images/c2c84919-c435-424b-a7bc-5435ab5c82ab.jpg" style="float:none;" sudyfile-attr="{'title':'rmw.jpg'}" /></a><a href="http://www.xinhuanet.com/" target="_blank" sudyfile-attr="{'title':'只支持选中一个链接时生效'}"><img data-layer="photo" src="images/0a2b1646-d24d-4dd6-a2db-aac605c86112.jpg" style="float:none;" sudyfile-attr="{'title':'xww.jpg'}" /></a><a href="http://www.univs.cn/" target="_blank" sudyfile-attr="{'title':'只支持选中一个链接时生效'}"><img data-layer="photo" src="images/94f3302c-c079-4b7b-b6c6-8838af9d3f0b.jpg" style="float:none;" sudyfile-attr="{'title':'zgdxs.jpg'}" /></a><a href="http://www.snuol.cn/" target="_blank" sudyfile-attr="{'title':'只支持选中一个链接时生效'}"><img data-layer="photo" src="images/af78abad-551a-4322-b4a0-3482d84521e1.jpg" style="float:none;" sudyfile-attr="{'title':'sxdxs.jpg'}" /></a></p>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wp-post post-33">
+                        <div class="post-body">
+                            <div class="news15 clearfix fl">
+                                <div class="news15_pic"><img src="images/weibo.jpg"></div>
+                                <div class="news15_tt">微博</div>
+                            </div>
+                            <div class="news15 clearfix fr">
+                                <div class="news15_pic"><img src="images/weixin.jpg"></div>
+                                <div class="news15_tt">微信</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//主体结束-->
+
+<!--底部开始-->
+<div class="wp-wrapper wp-footer">
+    <div class="wp-inner clearfix">
+        <div class="footer">
+            <p><span>地址:中国&nbsp;&nbsp;&nbsp;西安市南二环路中段</span><span>邮编:710064&nbsp;&nbsp;&nbsp;电话:+86-029-82338114</span><span>校党委宣传部制作&nbsp;&nbsp;&nbsp;陕ICP备021309</span></p>
+        </div>
+    </div>
+</div>
+<!--//底部结束-->
+
+</body>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript">
+    $(function(){
+        // 初始化SDAPP
+        new SDAPP({
+            'focus':{
+                zWidth:1116,
+                zHeight:316
+            },
+            "menu":{
+                type:"aside,slide"
+            }
+        });
+    });
+</script>
+<script type="text/javascript" >
+    $(function(){
+        $(".focus25").sudyfocus({
+            p:25,
+            zWidth:288,
+            zHeight:155,
+            response: true,
+            title: {
+                active: true, // 是否显示标题
+                isAutoWidth: false, // 标题背景自动宽度
+                href: false // 标题是否加文章链接
+            },
+            pagination: true,
+            interval:5000,
+            navigation:true, // 是否显示按钮，上一张、下一张
+            isNavHover: true // 导航按钮是否默认隐藏，鼠标经过时再显示
+        });
+    });
+</script>
+</html>

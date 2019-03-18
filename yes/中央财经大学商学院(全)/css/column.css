@@ -1,0 +1,119 @@
+
+* { margin: 0px; padding: 0px; }
+body { font-size: 12px; font-family: "Microsoft Yahei", 宋体, Arial, Helvetica, sans-serif; }
+img { border: none; }
+a { color: rgb(51, 51, 51); text-decoration: none; outline: none; }
+ul { list-style-type: none; }
+a { text-decoration: none; }
+.cls { clear: both; }
+table { border-collapse: collapse; border: none; }
+img { border: 0px; }
+input, textarea { outline: none; }
+.fl { float: left; }
+.fr { float: right; }
+body.ny_bg { background: url("../images/bg2.gif") repeat-x; }
+.clear { clear: both; }
+body { font-size: 12px; font-family: "Microsoft Yahei", 宋体, Arial, Helvetica, sans-serif; }
+.ny_box { margin-top: 20px; padding: 20px 0px 32px; background: url("../images/ny_main_bg.gif") center top repeat-x rgb(247, 247, 247); }
+.ny_main {   margin: 0px auto; background: url("../images/ny_right_bg.png") 295px top no-repeat; }
+.ny_left {  overflow: hidden; }
+.ny_right {  padding: 0px 20px 50px; background: rgb(255, 255, 255); position: relative; min-height: 500px; z-index: 5; }
+.ny_left_t {  height: 62px; line-height: 62px; overflow: hidden; }
+.ny_left_t span { float: right; font-size: 14px; color: rgb(51, 51, 51); }
+.ny_left_t em { font-style: normal; font-size: 28px; color: rgb(17, 68, 136); font-family: "Palatino Linotype", Georgia, "Times New Roman", Times, serif; }
+.left_nav { overflow: hidden; }
+.left_nav_item {  overflow: hidden; }
+.left_nav_item span { display: block; height: 39px; line-height: 39px; overflow: hidden; border-bottom: 1px solid rgb(225, 225, 225); color: rgb(51, 51, 51); text-indent: 15px; background: url("../images/down1.gif") left center no-repeat; font-size: 16px; cursor: pointer; }
+.left_nav_item span:hover { background: url("../images/down4.gif") left center no-repeat; }
+.left_nav_item span font { float: right; font-size: 11px; text-align: right; }
+.left_nav_item span a { height: 39px; line-height: 39px; overflow: hidden; color: rgb(51, 51, 51); display: block; }
+.left_nav .open span { background: url("../images/down3.gif") left bottom no-repeat; }
+.left_nav .left_nav_item_son {  display: block; overflow: hidden; }
+.left_nav .open .left_nav_item_son { display: block; }
+.left_nav .left_nav_item_son { padding-left: 30px; overflow: hidden; }
+.left_nav .left_nav_item_son li { height: 39px; line-height: 39px; overflow: hidden; border-bottom: 1px solid rgb(225, 225, 225); text-indent: 3px; }
+.left_nav .left_nav_item_son li a { display: block; height: 39px; line-height: 39px; font-size: 15px; }
+.left_nav .left_nav_item_son li a em { float: right; font-style: normal; font-size: 11px; }
+.left_nav .left_nav_item_son li a:hover { color: rgb(51, 51, 51); background: url("../images/ico1.gif") left bottom no-repeat; }
+.left_nav .left_nav_item_son li a.cur { color: rgb(51, 51, 51); background: url("../images/ico1.gif") left bottom no-repeat; }
+.danquan { height: 35px;  overflow: hidden; line-height: 28px; font-size: 13px; color: rgb(51, 51, 51); }
+.danquan a { color: rgb(51, 51, 51); }
+.danquan a:hover { color: rgb(191, 153, 1); }
+.danquan font { font-size: 13px; color: rgb(191, 153, 1); }
+.danquan span { display: inline-block; width: 135px; height: 35px; background: url("../images/danquan.png") no-repeat; line-height: 28px; text-indent: 25px; font-size: 14px; }
+.danquan span a { color: rgb(255, 255, 255); }
+.danquan span a:hover { color: rgb(255, 255, 255); }
+.ny_huangdeng {  position: absolute; left: -1px; top: 55px; overflow: hidden; z-index: 7; }
+.ny_banner {  height: 300px; margin: 0px auto; position: relative; overflow: hidden; z-index: 7; }
+.ny_banner ul li { list-style: none; }
+.ny_banner ul li img { list-style: none; height: 300px; }
+.ny_banner .num { overflow: hidden; height: 20px; line-height: 20px; padding: 2px 0px;  position: absolute; bottom: 0px; left: 0px; zoom: 1; z-index: 10; background: url("../images/tmbg.png"); }
+.ny_banner .num ul { float: right; overflow: hidden; padding-right: 15px; }
+.ny_banner .num li { width: 20px; height: 20px; line-height: 20px; text-align: center; color: rgb(255, 255, 255); background: rgb(0, 0, 0); margin-right: 5px; cursor: pointer; float: left; list-style: none; display: inline; }
+.ny_banner .num li.on { background: rgb(0, 102, 204); }
+.ny_right_con2 { overflow: hidden; }
+.ny_art {  overflow: hidden; }
+.ny_jxxm_box {  padding-left: 10px; overflow: hidden; }
+.ny_tab {  height: 37px; overflow: hidden; background: url("../images/xx.gif") left bottom repeat-x; margin-bottom: 10px; }
+.news_tab {  float: left; height: 37px; overflow: hidden; }
+.news_tab li { line-height: 37px; float: left; height: 37px; color: rgb(51, 51, 51); font-size: 16px; overflow: hidden; cursor: pointer; display: inline; padding: 0px 20px; margin-right: 5px; }
+.news_tab li.Cur { color: rgb(191, 153, 1); background: url("../images/xx2.gif") left bottom repeat-x; }
+.tab_more { line-height: 37px; width: 60px; float: right; height: 37px; overflow: hidden; display: inline; font-family: 宋体; }
+.tab_more span { text-align: right; width: 100%; display: none; float: left; height: 37px; overflow: hidden; }
+.tab_more span a { color: rgb(51, 51, 51); }
+.tab_more span a:hover { color: rgb(191, 153, 1); }
+.tab_news {  overflow: hidden; }
+.tab_news_item {  display: none; overflow: hidden; }
+.tab_news_item ul { overflow: hidden; }
+.tab_news_item ul li { height: 30px; line-height: 30px; overflow: hidden; padding-left: 15px; background: url("../images/ddd.gif") 2px center no-repeat; font-size: 14px; vertical-align: middle; }
+.tab_news_item ul li a { height: 30px; line-height: 30px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: rgb(97, 97, 97); }
+.tab_news_item ul li a:hover { color: rgb(191, 153, 1); }
+.tab_news_item ul li span { float: right; font-size: 13px; overflow: hidden; color: rgb(150, 150, 150); font-family: 微软雅黑; }
+.ny_jxxm_gy {  overflow: hidden; padding-top: 30px; }
+.ny_jxxm_gy_t { height: 37px; line-height: 37px; background: url("../images/xx.gif") left bottom repeat-x; margin-bottom: 10px; overflow: hidden; }
+.ny_jxxm_gy_t span { float: right; overflow: hidden; font-family: 宋体; }
+.ny_jxxm_gy_t span a { color: rgb(51, 51, 51); }
+.ny_jxxm_gy_t span a:hover { color: rgb(191, 153, 1); }
+.ny_jxxm_gy_t font { display: inline-block; padding: 0px 20px; color: rgb(191, 153, 1); font-size: 16px; height: 35px; line-height: 35px; border-bottom: 2px solid rgb(191, 153, 1); }
+.ny_jxxm_gy dl {  overflow: hidden; padding: 15px 0px; border-bottom: 1px dotted rgb(204, 204, 204); }
+.ny_jxxm_gy dl dt { float: left;  height: 105px; overflow: hidden; display: inline; }
+.ny_jxxm_gy dl dt img { width: 145px; height: 105px; }
+.ny_jxxm_gy dl dd {  float: right; overflow: hidden; }
+.ny_jxxm_gy dl dd h2 { font-size: 14px; height: 24px; line-height: 24px; overflow: hidden;margin-top:0; }
+.ny_jxxm_gy dl dd h2 a { color: rgb(51, 51, 51); }
+.ny_jxxm_gy dl dd h2 a:hover { text-decoration: underline; color: rgb(0, 99, 190); }
+.ny_jxxm_gy dl dd p {
+    font-size: 13px; line-height: 24px; color: rgb(97, 97, 97);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+
+}
+.ny_jxxm_btn { padding-top: 20px; text-align: center; overflow: hidden; }
+.ny_jxxm_btn img { margin: 0px 10px; }
+.hcdict-btnclose, .hcdict-fixer { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_icon01.png"); }
+.hcdict-popcont { background-image: url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_bg.png"); }
+
+/*轮播图：*/
+.slick img{
+    width: 100%;
+    height: 300px;
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .slick img{
+        width: 100%;
+        height: 200px;
+    }
+}
+@media (max-width: 768px){
+    .slick img{
+        width: 100%;
+        height: 200px;
+    }
+    .ny_right {  padding: 0px 4px 50px;  }
+    .ny_box {
+        margin-top: 10px;
+        padding: 10px 0px 32px;
+    }
+}

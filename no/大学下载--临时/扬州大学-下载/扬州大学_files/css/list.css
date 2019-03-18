@@ -1,0 +1,164 @@
+a {
+  display: inline-block;
+}
+.list-container {
+  margin-top: 20px;
+}
+.list-container .mobile-tabs .mobile-tab {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  border-left: 1px solid #ccc;
+  background: #e4e4e4;
+}
+.list-container .mobile-tabs .mobile-tab:first-child {
+  border-left: none;
+}
+.list-container .mobile-tabs .mobile-tab.active {
+  background: #a52b2b;
+}
+.list-container .mobile-tabs .mobile-tab.active a {
+  color: #fff;
+}
+.list-container .left-panel {
+  min-height: 800px;
+  background: url(../images/leftbg.jpg) bottom center no-repeat #f2f1eb;
+}
+.list-container .left-panel .title {
+  height: 39px;
+  line-height: 39px;
+  background: url(../images/leftmenubg.jpg) center center no-repeat;
+  text-align: center;
+  vertical-align: middle;
+  color: #f2f1eb;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.list-container .left-panel .tab-items .tab-item {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 10px;
+}
+.list-container .left-panel .tab-items .tab-item a {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  background: #e3dec8;
+  text-align: center;
+  font-size: 14px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.list-container .left-panel .tab-items .tab-item a:hover {
+  color: #f00;
+}
+.list-container .right-panel .title {
+  margin-bottom: 15px;
+  line-height: 38px;
+  border-bottom: 2px solid #cccccc;
+}
+.list-container .right-panel .title .left-span {
+  display: inline-block;
+  height: 39px;
+  background: url(../images/icon02.jpg) 5px center no-repeat;
+  border-bottom: 2px solid #851313;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  top: 2px;
+  color: #861313;
+}
+.list-container .right-panel .lists-detail {
+  margin-top: 15px;
+}
+.list-container .right-panel .lists-detail .list-a {
+  background: url(../images/icon01.jpg) 5px center no-repeat;
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px dashed #cccccc;
+  padding-left: 18px;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.list-container .right-panel .search-setting-wrap {
+  margin-bottom: 20px;
+}
+.list-container .right-panel .search-setting-wrap .search-setting {
+  height: 30px;
+  padding-left: 20px;
+  line-height: 30px;
+  font-size: 12px;
+  border: 1px solid #DADADA;
+  background: url(../images/bg.gif);
+  margin: 10px 0 -1px 0;
+}
+.list-container .right-panel .search-setting-wrap .search-setting a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.list-container .right-panel .search-setting-wrap .search-setting .the-first {
+  background: url(../images/first_disabled.gif) no-repeat center;
+  cursor: auto;
+}
+.list-container .right-panel .search-setting-wrap .search-setting .pre {
+  background: url(../images/prev_disabled.gif) no-repeat center;
+  cursor: auto;
+}
+.list-container .right-panel .search-setting-wrap .search-setting .next {
+  background: url(../images/next.gif) no-repeat center;
+}
+.list-container .right-panel .search-setting-wrap .search-setting .the-last {
+  background: url(../images/last.gif) no-repeat center;
+}
+.list-container .right-panel .search-setting-wrap .search-setting input {
+  width: 30px;
+  height: 20px;
+}
+@media (max-width: 768px) {
+  .list-container .right-panel .search-setting-wrap .search-setting {
+    padding-left: 0;
+  }
+}
+.detail-article .detail-title {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.detail-article .article-info {
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  background: #f3f3f3;
+}
+.detail-article .article-info span {
+  font-size: 12px;
+}
+.detail-article .article-text {
+  margin-top: 20px;
+}
+.detail-article .article-text .text-p {
+  font-family: "宋体";
+  text-indent: 20px;
+  font-size: 14px;
+  line-height: 30px;
+}
+.detail-article .article-text .img {
+  margin: 10px 0;
+  text-align: center;
+}
+.detail-article .article-text .img img {
+  max-width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=list.css.map */

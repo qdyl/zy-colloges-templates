@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/slick.css"><!--轮播样式-->
+    <link rel="stylesheet" href="css/reset-init.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .slick{
+            width:90%;
+            margin: 20px;
+            height: auto;
+            border: 1px solid red;
+        }
+        .slick img{
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="slick">
+    <div>
+        <a href=""><img src="imgs/lunb1.jpg" alt="百行智学院"></a>
+    </div>
+    <div>
+        <a><img src="imgs/lunb2.jpg" alt="息差 银行业 2019"></a>
+    </div>
+    <div>
+        <a><img src="imgs/lunb3.jpg" alt="金融科技 区块链"></a>
+    </div>
+    <div>
+        <a><img src="imgs/lunb4.jpg" alt="央行 流动性"></a>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+
+    $(function(){
+        // 轮播
+        // $('.slick-list').css('height','200px');
+        setTimeout(function () {
+            $('.slick').slick({
+                dots: true,
+                arrows: true
+            });
+        },10)
+
+    });
+
+</script>
+</html>

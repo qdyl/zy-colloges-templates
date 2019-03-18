@@ -1,0 +1,306 @@
+/*全局变量*/
+var ls = 0;
+var frd;
+
+/*end*/
+
+/*改变顶部导航*/
+function changeMenu(n){
+	var menu = document.getElementById("mainmenu").getElementsByTagName("a");
+	for(i=0;i<menu.length-1;i++){
+		menu[i].className = (i==n)?"menu_on":"menu_off";
+	}
+}
+function changeMenu02(n){
+	var menu = document.getElementById("header").contentWindow.document.getElementById("mainmenu").getElementsByTagName("a");
+	for(i=0;i<menu.length-1;i++){
+		menu[i].className = (i==n)?"menu_on":"menu_off";
+	}
+}
+/*end*/
+/*首页list切换*/
+function changeList(n){
+	var tit = document.getElementById("ilm_tit").getElementsByTagName("a");
+	var div = document.getElementById("il_middle").getElementsByTagName("div");
+	for(i=0;i<tit.length-1;i++){
+		tit[i].className = (i==n)?"tit_btnon":"tit_btnoff";
+	}
+	for(i=1;i<div.length;i++){
+		div[i].style.display = (i==n+1)?"block":"none";
+	}
+}
+/*end*/
+/*改变二级导航*/
+function changelfmn(n){
+	var lfmn = document.getElementById("ylm_ul").getElementsByTagName("li");
+	var jt = document.getElementById("ylm_ul").getElementsByTagName("img");
+	for (i = 0; i < lfmn.length; i++) {
+	    lfmn[i].className = (i == n) ? "ylm_ulon" : "ylm_uloff";
+	    //lfmn[i].style.background = (i == n) ? "url(../images/subNavOn.jpg) no-repeat center 3px" : "url(../images/sj.jpg) no-repeat 110px 9px";
+		//jt[i].src = (i==n)?"../images/yxgk_jton.jpg":"../images/yxgk_jtoff.jpg";
+	}
+}
+/*end*/
+
+function adjustFrameSize(frameid)
+  {
+
+            var frm = document.getElementById(frameid); //将iframe1替换呈现有ID名
+            var subWeb = document.frames ? document.frames[frameid].document : frm.contentDocument; 
+           if(frm != null && subWeb != null) 
+          {
+
+              frm.style.height = "0px"; //初始化一下,否则会保留大页面高度
+              try {
+                  document.getElementById("yxgk_left").getElementsByTagName("div")[1].style.height = subWeb.documentElement.scrollHeight - 31 + "px";
+                  frm.style.height = subWeb.documentElement.scrollHeight + "px";
+                  frm.style.width = subWeb.documentElement.scrollWidth + "px";
+                  subWeb.body.style.overflowX = "auto";
+                  subWeb.body.style.overflowY = "auto";
+              } catch (e) {
+              }
+				   
+
+
+} }
+
+/*List_title*/
+function settit(event){
+	var o = event.srcElement || event.target;
+	if(o.title == ""){
+	o.title = o.innerHTML;
+	}else{
+		return;
+	}
+}
+/*end*/
+
+/*changelist*/
+function changelc() {
+    if (location.href.split("?").length > 1) {
+        var url = location.href;
+        var tmp1 = url.split("?")[1];
+        var tmp2 = tmp1.split("&")[0];
+        var tmp3 = tmp2.split("=")[1];
+        changelfmn(tmp3);
+        if (tmp1.split("&")[1] != undefined) {
+            var tmp4 = tmp1.split("&")[1];
+            var tmp5 = tmp4.split("=")[1];
+        } else {
+            return;
+        }
+        if (tmp5 == "xsyd") {
+            window.parent.document.getElementById("mainiframe").src = "../html/contentlist.aspx?ParentID=10&TypeID=23";
+        } else {
+            window.parent.document.getElementById("mainiframe").src = tmp5;
+        }
+    } else {
+        changelfmn(0);
+    }
+    if (document.getElementById("ylm_ul").getElementsByTagName("li")[0].getElementsByTagName("div").length > 0) {
+        changemenu2j(0);
+    }
+}
+/*end*/
+
+/*closewidnow*/
+function closeWD(){
+	window.parent.close();
+}
+/*end*/
+
+/*scroll*/
+function scrollfrd(){
+	if(ls<document.getElementById("link_cnt").offsetWidth){
+		document.getElementById("frd_cnt").scrollLeft = ls;
+		ls+=201;
+	}else{
+		document.getElementById("frd_cnt").scrollLeft = 0;
+		ls = 0;
+	}
+}
+function startfrd(){
+	document.getElementById("jx").innerHTML = document.getElementById("link_cnt").innerHTML;
+	frd = setInterval("scrollfrd()",3000);
+}
+/*end*/
+
+/*menu2j*/
+function changemenu2j(n) {
+    try {
+        var mn = document.getElementById("menu2j2").getElementsByTagName("a");
+        for (i = 0; i < mn.length; i++) {
+            mn[i].style.color = (i == n) ? "#727272" : "#727272";
+        }
+
+    } catch (e) {
+    }
+	var mn = document.getElementById("menu2j").getElementsByTagName("a");
+	for(i=0;i<mn.length;i++){
+	    mn[i].style.color = (i == n) ? "#c02424" : "#727272";
+	}
+	var mn = document.getElementById("menu2j3").getElementsByTagName("a");
+	for (i = 0; i < mn.length; i++) {
+	    mn[i].style.color = (i == n) ? "#727272" : "#727272";
+	}
+}
+/*end*/
+
+/*menu2j2*/
+function changemenu2j2(n) {
+    try {
+        var mn = document.getElementById("menu2j").getElementsByTagName("a");
+        for (i = 0; i < mn.length; i++) {
+            mn[i].style.color = (i == n) ? "#727272" : "#727272";
+        }
+
+        var mn = document.getElementById("menu2j2").getElementsByTagName("a");
+        for (i = 0; i < mn.length; i++) {
+            mn[i].style.color = (i == n) ? "#c02424" : "#727272";
+        }
+        var mn = document.getElementById("menu2j3").getElementsByTagName("a");
+        for (i = 0; i < mn.length; i++) {
+            mn[i].style.color = (i == n) ? "#727272" : "#727272";
+        }
+    } catch (e) {
+    }
+}
+/*end*/
+
+/*menu2j2*/
+function changemenu2j3(n) {
+    try {
+        var mn = document.getElementById("menu2j").getElementsByTagName("a");
+        for (i = 0; i < mn.length; i++) {
+            mn[i].style.color = (i == n) ? "#727272" : "#727272";
+        }
+
+        var mn = document.getElementById("menu2j2").getElementsByTagName("a");
+        for (i = 0; i < mn.length; i++) {
+            mn[i].style.color = (i == n) ? "#727272" : "#727272";
+        }
+
+        var mn = document.getElementById("menu2j3").getElementsByTagName("a");
+        for (i = 0; i < mn.length; i++) {
+            mn[i].style.color = (i == n) ? "#c02424" : "#727272";
+        }
+    } catch (e) {
+    }
+}
+/*end*/
+
+
+
+
+/*scroll*/
+var myScroll = (
+function(x) {
+    var Int = null;
+    var step = 500;
+    var speed = 20;
+    function scrollMain(x, s, n) {
+        var sl = document.getElementById("scrollCnt")["scroll" + x];
+        var mx = document.getElementById("scrollA")["offset" + s];
+        if (n > 0) {
+            if (sl < mx - mx / step) {
+                document.getElementById("scrollCnt")["scroll" + x] += mx / step;
+            } else {
+                document.getElementById("scrollCnt")["scroll" + x] = 0;
+            }
+        } else if (n < 0) {
+            if (sl > 0) {
+                document.getElementById("scrollCnt")["scroll" + x] -= mx / step;
+            } else {
+                document.getElementById("scrollCnt")["scroll" + x] = mx;
+            }
+        }
+    }
+    function startScroll(x) {
+
+        switch (x) {
+            case 0:
+                document.getElementById("scrollA").style.float = "left";
+                document.getElementById("scrollA").style.display = "inline";
+                document.getElementById("scrollB").style.float = "left";
+                document.getElementById("scrollB").style.display = "inline";
+                document.getElementById("scrollM").style.width = "9999px";
+                document.getElementById("scrollM").insertBefore(document.getElementById("scrollB"), document.getElementById("scrollE"));
+                Int = setInterval(function() { scrollMain('Left', 'Width', 1) }, speed);
+                break;
+
+            case 1:
+                document.getElementById("scrollM").insertBefore(document.getElementById("scrollB"), document.getElementById("scrollA"));
+                document.getElementById("scrollA").style.float = "left";
+                document.getElementById("scrollA").style.display = "inline";
+                document.getElementById("scrollB").style.float = "left";
+                document.getElementById("scrollB").style.display = "inline";
+                document.getElementById("scrollM").style.width = "9999px";
+                Int = setInterval(function() { scrollMain('Left', 'Width', -1) }, speed);
+                break;
+
+            case 2:
+                document.getElementById("scrollM").style.height = "9999px";
+                document.getElementById("scrollM").insertBefore(document.getElementById("scrollB"), document.getElementById("scrollE"));
+                Int = setInterval(function() { scrollMain('Top', 'Height', 1) }, speed);
+                break;
+
+            case 3:
+                Int = setInterval(function() { scrollMain('Top', 'Height', -1) }, speed);
+                document.getElementById("scrollM").insertBefore(document.getElementById("scrollB"), document.getElementById("scrollE"));
+                break;
+
+            default:
+                break;
+        }
+        document.getElementById("scrollB").innerHTML = document.getElementById("scrollA").innerHTML;
+    }
+    function finishScroll(event) {
+        var o = event.srcElement || event.target;
+        var eto = event.toElement || event.relatedTarget;
+        var cld = o.childNodes;
+        for (i = 0; i < cld.length; i++) {
+            if (cld[i] == eto) {
+                return;
+            }
+        }
+        clearInterval(Int);
+    }
+    return [startScroll,finishScroll];
+})()
+/*end*/
+
+function jsUrlEncode(strUrl)
+{
+    return strUrl.replace(/"/g, '&quot;').replace(/http/gi, '').replace(/:/g, '').replace(/\/\//g, '').replace(/\\/g, '').replace(/</g, '');
+}
+
+function QuTSFH(url) {
+            url = url.replace("<", "");
+            url = url.replace(">", "");
+            url = url.replace("'", "");
+            url = url.replace(":", "");
+            url = url.replace("(", "");
+            url = url.replace(")", "");
+            url = url.replace("\"", "");
+            url = url.replace(" ", "");
+            url = url.replace("*", "");
+            url = url.replace("#", "");
+            url = url.replace("$", "");
+            url = url.replace("^", "");
+            url = url.replace(";", "");
+            var Num = url.indexOf("<") + url.indexOf(">") + url.indexOf("\"") + url.indexOf("(")
+            + url.indexOf(")")
+            + url.indexOf("*")
+            + url.indexOf("^")
+            + url.indexOf("$")
+            + url.indexOf("#")
+            + url.indexOf(";")
+            + url.indexOf(" ")
+            + url.indexOf("'");
+            if (Num != -12) {
+                QuTSFH(url);
+            }
+            else {
+                return url;
+            }
+        }

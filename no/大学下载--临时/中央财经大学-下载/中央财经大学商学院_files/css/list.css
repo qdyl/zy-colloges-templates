@@ -1,0 +1,486 @@
+
+* {
+    margin:0px;
+    padding:0px;
+}
+body {
+    font-size:12px;
+    font-family:"Microsoft Yahei",宋体,Arial,Helvetica,sans-serif;
+}
+img {
+    border:none;
+}
+a {
+    color:rgb(51,51,51);
+    text-decoration:none;
+    outline:none;
+}
+ul {
+    list-style-type:none;
+}
+a {
+    text-decoration:none;
+}
+.cls {
+    clear:both;
+}
+table {
+    border-collapse:collapse;
+    border:none;
+}
+img {
+    border:0px;
+}
+input,textarea {
+    outline:none;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+body.ny_bg {
+    background:url("../images/bg2.gif") repeat-x;
+}
+body {
+    font-size:12px;
+    font-family:"Microsoft Yahei",宋体,Arial,Helvetica,sans-serif;
+}
+.ny_box {
+    margin-top:20px;
+    padding:20px 0px 32px;
+   /* background:url("../images/ny_main_bg.gif") center top repeat-x #f3f3f3;*/
+}
+.ny_main {
+    margin:0px auto;
+    background:rgb(255,255,255);
+
+}
+.ny_left {
+    overflow:hidden;
+}
+.ny_right {
+    padding:0px 20px 50px;
+    position:relative;
+    min-height:500px;
+    z-index:5;
+    background:url("../images/ny_right_bg.png") top/104% no-repeat;
+}
+.ny_left_t {
+    height:62px;
+    line-height:62px;
+    overflow:hidden;
+}
+.ny_left_t span {
+    float:right;
+    font-size:14px;
+    color:rgb(51,51,51);
+}
+.ny_left_t em {
+    font-style:normal;
+    font-size:28px;
+    color:rgb(17,68,136);
+    font-family:"Palatino Linotype",Georgia,"Times New Roman",Times,serif;
+}
+.left_nav {
+    overflow:hidden;
+}
+.left_nav_item {
+    overflow:hidden;
+}
+.left_nav_item span {
+    display:block;
+    height:39px;
+    line-height:39px;
+    overflow:hidden;
+    border-bottom:1px solid rgb(225,225,225);
+    color:rgb(51,51,51);
+    text-indent:15px;
+    background:url("../images/down1.gif") left center no-repeat;
+    font-size:16px;
+    cursor:pointer;
+}
+.left_nav_item span:hover {
+    background:url("../images/down4.gif") left center no-repeat;
+}
+.left_nav_item span font {
+    float:right;
+    font-size:11px;
+    text-align:right;
+}
+.left_nav_item span a {
+    height:39px;
+    line-height:39px;
+    overflow:hidden;
+    color:rgb(51,51,51);
+    display:block;
+}
+.left_nav .open span {
+    background:url("../images/down3.gif") left bottom no-repeat;
+}
+.left_nav .left_nav_item_son {
+    width:272px;
+    display:block;
+    overflow:hidden;
+}
+.left_nav .open .left_nav_item_son {
+    display:block;
+}
+.left_nav .left_nav_item_son {
+    width:242px;
+    padding-left:30px;
+    overflow:hidden;
+}
+.left_nav .left_nav_item_son li {
+    height:39px;
+    line-height:39px;
+    overflow:hidden;
+    border-bottom:1px solid rgb(225,225,225);
+    text-indent:3px;
+}
+.left_nav .left_nav_item_son li a {
+    display:block;
+    height:39px;
+    line-height:39px;
+    font-size:15px;
+}
+.left_nav .left_nav_item_son li a em {
+    float:right;
+    font-style:normal;
+    font-size:11px;
+}
+.left_nav .left_nav_item_son li a:hover {
+    color:rgb(51,51,51);
+    background:url("../images/ico1.gif") left bottom no-repeat;
+}
+.left_nav .left_nav_item_son li a.cur {
+    color:rgb(51,51,51);
+    background:url("../images/ico1.gif") left bottom no-repeat;
+}
+.danquan {
+    height:35px;
+    overflow:hidden;
+    line-height:28px;
+    font-size:13px;
+    color:rgb(51,51,51);
+}
+.danquan a {
+    color:rgb(51,51,51);
+}
+.danquan a:hover {
+    color:rgb(191,153,1);
+}
+.danquan font {
+    font-size:13px;
+    color:rgb(191,153,1);
+}
+.danquan span {
+    display:inline-block;
+    width:135px;
+    height:35px;
+    background:url("../images/danquan.png") no-repeat;
+    line-height:28px;
+    text-indent:25px;
+    font-size:14px;
+}
+.danquan span a {
+    color:rgb(255,255,255);
+}
+.danquan span a:hover {
+    color:rgb(255,255,255);
+}
+.ny_right_box {
+    padding:20px 0px 0px;
+    overflow:hidden;
+}
+.list_news {
+    overflow:hidden;
+    padding-left:10px;
+}
+.list_news dl {
+    overflow:hidden;
+    padding-bottom:15px;
+    margin-bottom:15px;
+    border-bottom:1px dotted rgb(198,198,198);
+}
+.list_news dl dt {
+    margin-bottom:5px;
+}
+.list_news dl dt a {
+    font-size:14px;
+    padding-left:15px;
+    background:url("../images/dd.gif") left center no-repeat;
+    color:rgb(0,99,190);
+}
+.list_news dl dt a:hover {
+    text-decoration:underline;
+    color:rgb(0,99,190);
+}
+.list_news dl dd {
+    padding-left:15px;
+    overflow:hidden;
+}
+.list_news dl dd .wz03 {
+    font-size:13px;
+    color:rgb(51,51,51);
+    line-height:25px;
+    margin-bottom:5px;
+}
+.list_news dl dd .wz04 {
+    font-size:13px;
+    color:rgb(0,99,190);
+}
+.list_news dl dd .wz04 em {
+    font-style:normal;
+    color:rgb(51,51,51);
+    margin:0px 5px;
+}
+.list_news dl dd .wz04 a {
+    color:rgb(191,153,1);
+}
+.list_news dl dd .wz04 a:hover {
+    text-decoration:underline;
+    color:rgb(0,99,190);
+}
+.hcdict-btnclose,.hcdict-fixer {
+    background-image:url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_icon01.png");
+}
+.hcdict-popcont {
+    background-image:url("http://dict.cn/v/1.0.2/i1/plugins/resources/images/dict_chrome_bg.png");
+}
+.headStyle66jxbokj5x,.headStyle66jxbokj5x td,.headStyle66jxbokj5x div {
+    font-size:12px;
+    font-family:宋体;
+    color:rgb(0,0,0);
+    margin-left:auto;
+    margin-right:auto;
+    line-height:14px;
+}
+.defaultButtonStyle {
+    font-size:12px;
+    font-family:宋体;
+    height:20px;
+    color:rgb(0,0,0);
+    border:1px solid rgb(175,213,245);
+    margin:0px;
+    padding:0px;
+    line-height:14px;
+}
+.headStyle66jxbokj5x a,.pageList .this-page {
+    font-size:12px;
+    font-family:宋体;
+    display:inline-block;
+    height:14px;
+    padding:2px 4px;
+    border:1px solid rgb(175,213,245);
+    background:rgb(255,255,255);
+    text-decoration:none;
+    margin-right:1px;
+    line-height:14px;
+}
+.headStyle66jxbokj5x a:visited {
+    font-size:12px;
+    font-family:宋体;
+    color:rgb(0,0,0);
+    text-decoration:none;
+    line-height:14px;
+}
+.headStyle66jxbokj5x .PrevDisabled {
+    font-size:12px;
+    font-family:宋体;
+    display:inline-block;
+    height:14px;
+    margin-right:3px;
+    padding:2px 4px;
+    background:rgb(255,255,255);
+    color:rgb(204,204,204);
+    border:1px solid rgb(175,213,245);
+    line-height:14px;
+}
+.headStyle66jxbokj5x .SelectList {
+    font-size:12px;
+    font-family:宋体;
+    height:16px;
+    line-height:14px;
+}
+.headStyle66jxbokj5x .Prev {
+    font-size:12px;
+    font-family:宋体;
+    margin-right:3px;
+    padding:2px 4px;
+    line-height:14px;
+}
+.headStyle66jxbokj5x .break {
+    font-size:12px;
+    font-family:宋体;
+    border:none;
+    text-decoration:none;
+    line-height:14px;
+}
+.headStyle66jxbokj5x .NextDisabled {
+    font-size:12px;
+    font-family:宋体;
+    display:inline-block;
+    height:14px;
+    margin-left:2px;
+    padding:2px 4px;
+    background:rgb(255,255,255);
+    color:rgb(204,204,204);
+    border:1px solid rgb(175,213,245);
+    line-height:14px;
+}
+.headStyle66jxbokj5x .Next {
+    font-size:12px;
+    font-family:宋体;
+    margin-left:2px;
+    padding:2px 4px;
+    line-height:14px;
+}
+.headStyle66jxbokj5x .this-page {
+    font-size:12px;
+    font-family:宋体;
+    display:inline-block;
+    height:14px;
+    padding:2px 4px;
+    border:1px solid rgb(175,213,245);
+    background:rgb(225,240,253);
+    font-weight:bold;
+    color:black;
+    margin-right:1px;
+    line-height:14px;
+}
+.headStyle66jxbokj5x a:hover {
+    font-size:12px;
+    font-family:宋体;
+    color:black;
+    background:rgb(239,247,254);
+    border-color:rgb(175,213,245);
+    text-decoration:none;
+    line-height:14px;
+}
+.headStyle66jxbokj5x a:link {
+    font-size:12px;
+    font-family:宋体;
+    color:rgb(0,0,0);
+    text-decoration:none;
+    line-height:14px;
+}
+.headStyle66jxbokj5x a:active {
+    font-size:12px;
+    font-family:宋体;
+    color:black;
+    text-decoration:none;
+    background:rgb(239,247,254);
+    line-height:14px;
+}
+/*03.07增加*/
+
+@media (max-width: 768px)  {
+    .ny_right {
+        padding: 0 5px;
+        background: transparent;
+    }
+    .list_news {
+        padding-left: 0;
+    }
+    .list_news dl dd {
+        padding-left: 0;
+    }
+    .list_news dl dt a {
+        padding-left: 10px;
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: inline-block;
+        width: 100%;
+    }
+    .list_news dl dd .wz03 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+    .ny_box {
+        margin-top: 10px;
+        padding: 10px 0px 32px;
+    }
+    .ny_right_box {
+        padding: 0;
+    }
+}
+
+/*详细页：样式*/
+.detail-article{
+
+}
+.detail-article .article-logo{
+    height: 35px;
+
+    background: #f1f1f1;
+}
+.detail-article .article-tag{
+    line-height: 35px;
+    height: 35px;
+    font-size: 20px;
+    color: #fff;
+    background: url(../images/ny_right_top.png) no-repeat;
+}
+
+.detail-article .article-tag em{
+    color: #88a2c4;
+    font-size: 17px;
+    line-height: 35px;
+}
+.article-text h3{
+    font-size: 22px;
+    text-align: center;
+    color: #0063be;
+    line-height: 40px;
+}
+.article-text small{
+    display: block;
+    color: #616161;
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0;
+    padding-bottom: 20px;
+    border-bottom: #d1d1d1 1px solid;
+}
+.article-text p{
+    color: #333;
+    font-size: 14px;
+    line-height: 28px;
+    text-indent: 30px;
+    margin: 20px 10px;
+}
+.article-text .img{
+    text-align: center;
+}
+.article-text img{
+    max-width: 100%;
+    height: auto;
+}
+.pre-next-article .pre-next{
+    color: #000;
+    font-size: 14px;
+   /* margin-right: 10px;*/
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.pre-next-article .pre-next a{
+    font-size: 12px;
+    color: #333;
+    margin-left: 10px;
+}
+/*详细页：文章*/
+@media (max-width: 768px) {
+    .article-text h3 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+}

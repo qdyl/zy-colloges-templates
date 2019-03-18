@@ -1,0 +1,548 @@
+<!DOCTYPE html >
+<!-- saved from url=(0034)http://jcr.ruc.edu.cn/indexcn.html -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, target-densitydpi=device-dpi">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <title>中国人民大学新闻学院中文网</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="/res/js//html5shiv.js"></script>
+    <script src="/res/js//respond.min.js"></script>
+<![endif]-->
+    <style>
+        .tab{ height:322px;}
+        .tab .tabTitle{height:36px; border-top:2px #9f1e31 solid; overflow:hidden; }
+        .tab .tabTitle strong{display:block;width:100px;float:left; color:#333;background: #f4f4f4; text-align:center; font:14px/34px SimSun;font-weight:normal; }
+        .tab .tabTitle strong.current{ background-color:#9f1e31; font-weight:bold; border:none; color:#fff;}
+        /*.tab .tabTitle strong.line{ border-left:1px #cfcfcf solid; border-right:1px #cfcfcf solid;}*/
+        .tab .none{display:none;}
+    </style>
+</head>
+<body>
+
+<header id="header" class="clearfix" style="position: relative;">
+    <div id="logo" class="container" style="margin-bottom: 10px;">
+        <div class="row" >
+            <a id="logoL" class="col-sm-6 col-xs-8"  href="http://jcr.ruc.edu.cn/"><img src="images/logo.png"></a>
+            <div id="logoR" class="col-sm-6 col-xs-10">
+                <div id="email">
+                    <a class="red" href="mailto:xwgy2016@126.com" title="xwgy2016@126.com">院长信箱</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="http://jcr.ruc.edu.cn/en/">English</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="http://211.71.215.181/" target="_blank">旧版网站</a>
+                </div>
+                <div id="search">
+                    <form name="fhsearch" action="http://jcr.ruc.edu.cn/plus/search.php" method="post" onsubmit="return soit()">
+                        <input type="hidden" name="kwtype" value="4">
+                        <input type="hidden" name="searchtype" value="titlekeyword">
+                        <input name="q" id="keyword" value="" class="ipt">
+                        <input class="ipt" type="submit" id="searchBtn" value="">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--导航：在手机上显示：开始-->
+    <div class="visible-xs visible-sm"  >
+        <div class="nav-mask"></div>
+        <nav class="navbar navbar-default" role="navigation" >
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#example-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse" >
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">首页</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                学院概况 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">院长致辞</a></li>
+                                <li><a href="#">学院简介</a></li>
+                                <li><a href="#">现任领导</a></li>
+                                <li><a href="#">分离的链接</a></li>
+                                <li><a href="#">系部介绍</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                新闻公告 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">新闻动态</a></li>
+                                <li><a href="#">通知公告</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                教职员工 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">教师</a></li>
+                                <li><a href="#">党政教辅</a></li>
+                                <li><a href="#">博士后</a></li>
+                                <li><a href="#">访问学者</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                招生培训 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">招生信息</a></li>
+                                <li><a href="#">培训信息</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                教学培养 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">招生信息</a></li>
+                                <li><a href="#">培训信息</a></li>
+                                <li><a href="#">博士后</a></li>
+                                <li><a href="#">访问学者</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--//导航：在手机上显示：结束-->
+
+    <!--导航：在PC上显示：开始-->
+    <div id="nav" class="visible-md visible-lg">
+        <ul id="sddm">
+            <li>
+                <a href="http://jcr.ruc.edu.cn/indexcn.html" onmouseover="mopen(&#39;m0&#39;)" onmouseout="mclosetime()">首页</a>
+                <div id="m0" onmouseover="mcancelclosetime()" onmouseout="mclosetime()"></div>
+            </li>
+            <li id="mainNav1">
+                <a href="http://jcr.ruc.edu.cn/gaikuang/index.html" onmouseover="mopen(&#39;m1&#39;)" onmouseout="mclosetime()">学院概况</a>
+                <div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" style="visibility: hidden;">
+                    <a href="http://jcr.ruc.edu.cn/gaikuang/zhici/">院长致辞</a>
+                    <a href="http://jcr.ruc.edu.cn/gaikuang/jianjie/">学院简介</a>
+                    <a href="http://jcr.ruc.edu.cn/gaikuang/lingdao/">现任领导</a>
+                    <a href="http://jcr.ruc.edu.cn/gaikuang/xibu/">系部介绍</a>
+                    <a href="http://jcr.ruc.edu.cn/gaikuang/lishi/">历史沿革</a>
+                    <a href="http://jcr.ruc.edu.cn/gaikuang/zhuanti/">专题展示</a>
+                    <a href="http://jcr.ruc.edu.cn/gaikuang/lianxi/">联系我们</a>
+                </div>
+            </li>
+            <li id="mainNav9"><a href="http://jcr.ruc.edu.cn/xinwen/" onmouseover="mopen(&#39;m9&#39;)" onmouseout="mclosetime()">新闻公告</a>
+            <div id="m9" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" style="visibility: hidden;">
+			
+                <a href="http://jcr.ruc.edu.cn/xinwen/dongtai/">新闻动态</a>
+			
+                <a href="http://jcr.ruc.edu.cn/xinwen/gonggao/">通知公告</a>
+			
+            </div>
+        </li><li id="mainNav12"><a href="http://jcr.ruc.edu.cn/yuangong/" onmouseover="mopen(&#39;m12&#39;)" onmouseout="mclosetime()">教职员工</a>
+            <div id="m12" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" style="visibility: hidden;">
+			
+                <a href="http://jcr.ruc.edu.cn/yuangong/jiaoshi/">教师</a>
+			
+                <a href="http://jcr.ruc.edu.cn/yuangong/jiaofu/">党政教辅</a>
+			
+                <a href="http://jcr.ruc.edu.cn/yuangong/boshihou/">博士后</a>
+			
+                <a href="http://jcr.ruc.edu.cn/yuangong/xuezhe/">访问学者</a>
+			
+            </div>
+        </li><li id="mainNav17"><a href="http://jcr.ruc.edu.cn/xinxi/zhaosheng/" onmouseover="mopen(&#39;m17&#39;)" onmouseout="mclosetime()">招生培训</a>
+            <div id="m17" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" style="visibility: hidden;">
+			
+                <a href="http://jcr.ruc.edu.cn/xinxi/zhaosheng/">招生信息</a>
+			
+                <a href="http://jcr.ruc.edu.cn/xinxi/peixun/">培训信息</a>
+			
+            </div>
+        </li><li id="mainNav20"><a href="http://jcr.ruc.edu.cn/peiyang/benke/" onmouseover="mopen(&#39;m20&#39;)" onmouseout="mclosetime()">教学培养</a>
+            <div id="m20" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" style="visibility: hidden;">
+			
+                <a href="http://jcr.ruc.edu.cn/peiyang/benke/">本科生</a>
+			
+                <a href="http://jcr.ruc.edu.cn/peiyang/shuoshi/">硕士生</a>
+			
+                <a href="http://jcr.ruc.edu.cn/peiyang/boshi/">博士生</a>
+			
+                <a href="http://jcr.ruc.edu.cn/peiyang/yanxiuban/">课程研修班</a>
+			
+            </div>
+        </li><li id="mainNav25"><a href="http://jcr.ruc.edu.cn/jiaoliu/" onmouseover="mopen(&#39;m25&#39;)" onmouseout="mclosetime()">国际交流</a>
+            <div id="m25" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+			
+                <a href="http://jcr.ruc.edu.cn/jiaoliu/guoji/">国际交流</a>
+			
+                <a href="http://jcr.ruc.edu.cn/jiaoliu/gangaotai/">港澳台交流</a>
+			
+            </div>
+        </li><li id="mainNav28"><a href="http://jcr.ruc.edu.cn/keyan/" onmouseover="mopen(&#39;m28&#39;)" onmouseout="mclosetime()">学术科研</a>
+            <div id="m28" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+			
+                <a href="http://jcr.ruc.edu.cn/keyan/jigou/">研究机构</a>
+			
+                <a href="http://jcr.ruc.edu.cn/keyan/chengguo/">学术成果</a>
+			
+            </div>
+        </li><li id="mainNav32"><a href="http://jcr.ruc.edu.cn/dangjian/" onmouseover="mopen(&#39;m32&#39;)" onmouseout="mclosetime()">党建工作</a>
+            <div id="m32" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+			
+            </div>
+        </li><li id="mainNav33"><a href="http://jcr.ruc.edu.cn/xuesheng/tuanxue/" onmouseover="mopen(&#39;m33&#39;)" onmouseout="mclosetime()">学生发展</a>
+            <div id="m33" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+			
+                <a href="http://jcr.ruc.edu.cn/xuesheng/tuanxue/">团学信息</a>
+			
+                <a href="http://jcr.ruc.edu.cn/xuesheng/shiwu/">学生事务</a>
+			
+                <a href="http://jcr.ruc.edu.cn/xuesheng/shixi/">实习就业</a>
+			
+                <a href="http://jcr.ruc.edu.cn/xuesheng/jiangxuejin/">奖学金</a>
+			
+                <a href="http://jcr.ruc.edu.cn/xuesheng/fengcai/">学生风采</a>
+			
+            </div>
+        </li>
+            <li><a href="http://jcr.ruc.edu.cn/xy/" onmouseover="mopen(&#39;m999&#39;)" onmouseout="mclosetime()">校友天地</a>
+                <div id="m999" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--//导航：在PC上显示：结束-->
+</header>
+
+<!--轮播大图：开始-->
+<div id="focus" class="container-fluid">
+    <div class="row">
+        <div id="myCarousel" class="carousel slide col-xs-12" style="padding: 0;">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/banner1.jpg" alt="First slide" style="width: 100%;height: auto;">
+                    <div class="carousel-caption"> <a class="banner-title-a" href="http://jcr.ruc.edu.cn/indexcn.html###">万物互联与泛媒介时代的新闻传播教育</a></div>
+                </div>
+                <div class="item">
+                    <img src="images/banner1.jpg" alt="Second slide">
+                    <div class="carousel-caption"><a class="banner-title-a" href="http://jcr.ruc.edu.cn/indexcn.html###">中国高教学会新闻学与传播学专业委员会第八届理事会换届会议</a></div>
+                </div>
+                <div class="item">
+                    <img src="images/banner1.jpg" alt="Third slide">
+                    <div class="carousel-caption"><a class="banner-title-a" href="http://jcr.ruc.edu.cn/indexcn.html###">新闻男篮、女篮获2018年中国人民大学篮球甲级联赛双冠军</a></div>
+                </div>
+                <div class="item">
+                    <img src="images/banner1.jpg" alt="Third slide">
+                    <div class="carousel-caption"> <a class="banner-title-a" href="http://jcr.ruc.edu.cn/indexcn.html###">双一流建设计划 | 人大新闻深研会第2期：数据驱动与学科未来</a></div>
+                </div>
+                <div class="item">
+                    <img src="images/banner1.jpg" alt="Third slide">
+                    <div class="carousel-caption"> <a class="banner-title-a" href="http://jcr.ruc.edu.cn/indexcn.html###">方汉奇教授捐赠百万奖金支持新闻史学研究与新闻传播学科发展</a></div>
+                </div>
+                <div class="item">
+                    <img src="images/banner1.jpg" alt="Third slide">
+                    <div class="carousel-caption"> <a class="banner-title-a" href="http://jcr.ruc.edu.cn/indexcn.html###";">新闻学院“校友讲坛”启动 | 张继伟首讲财新传媒的变与不变</a></div>
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+<!--//轮播大图：结束-->
+
+<section id="content">
+    <div class="container" style="padding: 0;">
+        <div class="row">
+            <!--主体main内容：开始-->
+            <main id="contentLf" class="col-xs-12 col-sm-12 col-md-8">
+                <!--新闻动态：开始-->
+                <div class="conBox">
+                    <h2 class="title"><a class="titleL" href="http://jcr.ruc.edu.cn/xinwen/">新闻动态</a><a class="more" href="http://jcr.ruc.edu.cn/xinwen/">更多&nbsp;&gt;</a></h2>
+                    <div class="conBox2 clearfix">
+
+                        <div id="news" class="col-md-6 col-xs-12">
+                            <a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1665.html"><img src="images/01-09_143250-2.jpg" border="0" width="320" height="160" alt="人大新闻学院2019年新年报告会：传承创新推进“双一流”建设"></a>
+                            <p><a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1665.html" title="人大新闻学院2019年新年报告会：传承创新推进“双一流”建设">人大新闻学院2019年新年报告会：传承创新推进“双一流”建设</a><span>1月2日，中国人民大学新闻学院教职工系着红围巾，拍下了2019年的第一张全家福。在当天举行的2019年...</span></p>
+
+                        </div>
+                        <ol class="col-md-6 col-xs-12">
+                            <li><span>[2019.01.09]</span>&nbsp;&nbsp;<a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1667.html" title="双一流建设 | 人大新闻深研会第12期：北京地区新闻从业人员专业意识动态调查报告发布">双一流建设 | 人大新闻深研会第12期：北京地区新闻从业人员专业意识动态调查报告发布</a></li>
+                            <li><span>[2019.01.09]</span>&nbsp;&nbsp;<a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1664.html" title="中国新闻史学会京津冀常务理事工作会（2019）召开">中国新闻史学会京津冀常务理事工作会（2019）召开</a></li>
+                            <li><span>[2018.12.26]</span>&nbsp;&nbsp;<a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1652.html" title="“双一流”建设 |如何打造新一代新闻传播课程体系？  人大新闻学院核心与特色课程创新计划首期结项">“双一流”建设 |如何打造新一代新闻传播课程体系？  人大新闻学院核心与特色课程创新计划首期结项</a></li>
+                            <li><span>[2018.12.26]</span>&nbsp;&nbsp;<a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1651.html" title="张辉锋教授获评2018年宝钢教育基金优秀教师奖">张辉锋教授获评2018年宝钢教育基金优秀教师奖</a></li>
+                            <li><span>[2018.12.26]</span>&nbsp;&nbsp;<a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1648.html" title="人大新闻学院博士生何天平获范敬宜新闻教育奖学子奖">人大新闻学院博士生何天平获范敬宜新闻教育奖学子奖</a></li>
+                            <li><span>[2018.12.24]</span>&nbsp;&nbsp;<a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1649.html" title="人大新闻学院与北大方正合作共建  智慧媒体未来实验室成立启动">人大新闻学院与北大方正合作共建  智慧媒体未来实验室成立启动</a></li>
+                            <li><span>[2018.12.21]</span>&nbsp;&nbsp;<a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1650.html" title="如何甄别与管控公共领域虚假信息？人大新闻学院研究课题结项">如何甄别与管控公共领域虚假信息？人大新闻学院研究课题结项</a></li>
+                            <li><span>[2018.12.19]</span>&nbsp;&nbsp;<a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1646.html" title="改革开放40周年 | 重大历史关头他们撰文发先声 人大新闻学院校友胡福明、陈锡添回校话春风">改革开放40周年 | 重大历史关头他们撰文发先声 人大新闻学院校友胡福明、陈锡添回校话春风</a></li>
+
+                        </ol>
+                    </div>
+                </div>
+                <!--//新闻动态：结束-->
+
+                <div class="conBox ">
+                    <!--国际交流：开始-->
+                    <div class="conBoxL col-md-6 col-sm-12 col-xs-12">
+                        <h2 class="title"><a class="titleL earth" href="http://jcr.ruc.edu.cn/jiaoliu/">国际交流</a><a id="moreGj" class="more" href="http://jcr.ruc.edu.cn/jiaoliu/">更多&nbsp;&gt;</a></h2>
+                        <div id="inter" class="inter">
+                            <div class="change">
+                                <a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1638.html"><img src="images/11-30_101502-4-lp.jpg" border="0" width="120" height="80" alt="2018年度巴基斯坦青年记者访华交流项目在人大新闻学院开班"></a>
+                                <p><a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1638.html">2018年度巴基斯坦青年记者访华交流项目在人大新闻学院开班</a><span>11月26日下午，2018年巴基斯坦青年记者访华短期交流项目在中国人民大学新闻学院开班，来自巴基斯坦主流媒体的10名记者将在中国展开为期7天的交流活动。</span></p>
+
+                            </div>
+                            <ol>
+                                <li><a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1605.html" title="格鲁吉亚《回声报》总编访问人大新闻学院">格鲁吉亚《回声报》总编访问人大新闻学院</a><span>[10.04]</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1603.html" title="会议 | 中外新闻传播学院院长共议 万物互联与泛媒介时代的新闻传播教育">会议 | 中外新闻传播学院院长共议 万物互联与泛...</a><span>[10.26]</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1600.html" title="“一带一路”沿线调研│ 俄罗斯媒体对外传播：卫星通讯社的理念与实践">“一带一路”沿线调研│ 俄罗斯媒体对外传播：...</a><span>[09.05]</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1597.html" title="“一带一路”沿线调研 | 波罗的海明珠：不仅要走得出去，更要留得下来">“一带一路”沿线调研 | 波罗的海明珠：不仅要...</a><span>[09.05]</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1596.html" title="“一带一路”沿线调研 | 华为在俄二十年：中国企业如何扎根海外">“一带一路”沿线调研 | 华为在俄二十年：中国...</a><span>[09.05]</span></li>
+
+                            </ol>
+                        </div>
+                    </div>
+                    <!--//国际交流：结束-->
+                    <!--学术科研：开始-->
+                    <div class="conBoxR col-md-6 col-sm-12 col-xs-12">
+                        <h2 class="title"><a class="titleL" href="http://jcr.ruc.edu.cn/keyan/">学术科研</a><a id="moreXs" class="more" href="http://jcr.ruc.edu.cn/keyan/">更多&nbsp;&gt;</a></h2>
+                        <div id="learn" class="inter">
+                            <div class="change">
+                                <a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1547.html"><img src="images/06-08_101941-4-lp.png" border="0" width="120" height="80" alt="陈力丹教授四部“马克思主义新闻观”新著即将出版"></a>
+                                <p><a href="http://jcr.ruc.edu.cn/xinwen/dongtai/content-1547.html">陈力丹教授四部“马克思主义新闻观”新著即将出版</a><span>今年正值马克思诞辰二百周年，全国新闻院校掀起了学习马克思主义新闻观的热潮。作为长期耕耘于马克思主义新闻观领域的知名学者，陈力丹教授主编的《马克思主义新闻观百科全书》、《人所具有的我都具有：马...</span></p>
+
+                            </div>
+                            <ol>
+                                <li><a href="http://jcr.ruc.edu.cn/keyan/dongtai/content-778.html" title="“新闻传播业的变革：历史与现实”会议及征文通知">“新闻传播业的变革：历史与现实”会议及征文通...</a><span>[06.12]</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/keyan/dongtai/content-777.html" title="高钢、彭兰教授参加“中国互联网新闻·十年”论坛">高钢、彭兰教授参加“中国互联网新闻·十年”论...</a><span>[05.27]</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/keyan/dongtai/content-776.html" title="敬一丹来我院做《电视新闻下的变与不变》讲座">敬一丹来我院做《电视新闻下的变与不变》讲座...</a><span>[03.09]</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/keyan/dongtai/content-775.html" title="杨保军教授参加南大新闻传播学院“博士之家学术午餐会”">杨保军教授参加南大新闻传播学院“博士之家学术...</a><span>[05.27]</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/keyan/dongtai/content-774.html" title="张辉锋副教授参加“融媒体背景下传媒商业模式创新研讨会”">张辉锋副教授参加“融媒体背景下传媒商业模式创...</a><span>[05.27]</span></li>
+
+                            </ol>
+                        </div>
+                    </div>
+                    <!--//学术科研：结束-->
+                </div>
+                <!--校友天地：开始-->
+                <div class="conBox">
+                    <h2 class="title"><a class="titleL" href="http://jcr.ruc.edu.cn/xy/" target="_blank">校友天地</a><a class="more" href="http://jcr.ruc.edu.cn/xy/" target="_blank">更多&nbsp;&gt;</a></h2>
+                    <ol id="friend">
+                        <li class="col-md-3 col-sm-3 col-xs-6 leftF"><a href="http://jcr.ruc.edu.cn/xy/news/" target="_blank"><img src="images/d.jpg"></a></li>
+                        <li class="col-md-3 col-sm-3 col-xs-6"><a href="http://jcr.ruc.edu.cn/xy/juanzeng/" target="_blank"><img src="images/j.jpg"></a></li>
+                        <li class="col-md-3 col-sm-3 col-xs-6"><a href="http://jcr.ruc.edu.cn/xy/xiaoyouhui/" target="_blank"><img src="images/x.jpg"></a></li>
+                        <li class="col-md-3 col-sm-3 col-xs-6"><a href="http://jcr.ruc.edu.cn/xy/lianxi/" target="_blank"><img src="images/l.jpg"></a></li>
+                    </ol>
+                </div>
+                <!--//校友天地：结束-->
+            </main>
+            <!--//主体main内容：结束-->
+
+            <!--侧边栏：开始(通知公告+招生信息+相关链接)-->
+            <aside id="contentRt" class="col-md-4 visible-lg visible-md" style="margin-top: 5px;padding-right: 0;">
+                <!--通知公告-->
+                <dl id="gonggao">
+                    <dt><h2>通知公告</h2></dt>
+                    <dd>
+                        <ol>
+                            <li><span class="red">11-17<!--.2018--></span><span>&nbsp;|&nbsp;</span><a href="http://jcr.ruc.edu.cn/xinwen/gonggao/content-1631.html" title="公告">公告</a></li>
+                            <li><span class="red">11-13<!--.2018--></span><span>&nbsp;|&nbsp;</span><a href="http://jcr.ruc.edu.cn/xinwen/gonggao/content-1630.html" title="关于推荐2018年度新媒体创新案例的征集函">关于推荐2018年度新媒体创新案例的征集函...</a></li>
+                            <li><span class="red">11-12<!--.2018--></span><span>&nbsp;|&nbsp;</span><a href="http://jcr.ruc.edu.cn/xinwen/gonggao/content-1628.html" title="中国人民大学新闻学院文献中心管理制度正式发布">中国人民大学新闻学院文献中心管理制度正...</a></li>
+                            <li><span class="red">11-09<!--.2018--></span><span>&nbsp;|&nbsp;</span><a href="http://jcr.ruc.edu.cn/xinwen/gonggao/content-1623.html" title="中国人民大学新闻学院招聘公告">中国人民大学新闻学院招聘公告</a></li>
+                            <li><span class="red">11-08<!--.2018--></span><span>&nbsp;|&nbsp;</span><a href="http://jcr.ruc.edu.cn/xinwen/gonggao/content-1621.html" title="中国人民大学新闻学院全球引进博士后公告">中国人民大学新闻学院全球引进博士后公告...</a></li>
+                            <li><span class="red">09-28<!--.2018--></span><span>&nbsp;|&nbsp;</span><a href="http://jcr.ruc.edu.cn/xinwen/gonggao/content-1586.html" title="第十一届（2018）中国新闻学年会会议通知">第十一届（2018）中国新闻学年会会议通知...</a></li>
+
+                        </ol>
+                    </dd>
+                    <dd class="ggmore"><a class="d_more" href="http://jcr.ruc.edu.cn/xinwen/gonggao/">更多通知公告&nbsp;&gt;</a></dd>
+                </dl>
+                <!--招生信息-->
+                <dl class="conRt tab">
+                    <dt class="tabTitle">
+                        <strong class="current">招生信息</strong><strong class="line">培训信息</strong><a class="morezs more" href="http://jcr.ruc.edu.cn/xinxi/zhaosheng/">更多</a><a class="morepx more none" href="http://jcr.ruc.edu.cn/xinxi/peixun/">更多</a>
+                    </dt>
+                    <dd>
+                        <div class="student">
+                            <ol class="clearfix">
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/zhaosheng/benke/"><img src="images/bachelor.jpg"></a></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/zhaosheng/shuoshi"><img src="images/master.jpg"></a></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/zhaosheng/boshi"><img src="images/doctor.jpg"></a></li>
+                            </ol>
+                            <ul>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/zhaosheng/boshi/content-1598.html" title="新闻学院2019年“申请-考核”制博士生招生工作方案">新闻学院2019年“申请-考核”制博士生招生工作方...</a><span>10.23</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/zhaosheng/content-1584.html" title="2019年中国人民大学新闻学院新闻与传播硕士专业学位研究生招生简章">2019年中国人民大学新闻学院新闻与传播硕士专业...</a><span>09.26</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/zhaosheng/shuoshi/content-1583.html" title="中国人民大学新闻学院2019年接收推荐免试研究生工作办法">中国人民大学新闻学院2019年接收推荐免试研究生...</a><span>09.25</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/zhaosheng/shuoshi/content-1570.html" title="2018年中国人民大学新闻学院硕士推免生选拔工作坊优胜者名单">2018年中国人民大学新闻学院硕士推免生选拔工作...</a><span>07.18</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/zhaosheng/shuoshi/content-1560.html" title="2018年中国人民大学新闻学院硕士推免生选拔工作坊安排">2018年中国人民大学新闻学院硕士推免生选拔工作...</a><span>07.01</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/zhaosheng/shuoshi/content-1556.html" title="2018年中国人民大学新闻学院硕士推免生选拔工作坊补选名单">2018年中国人民大学新闻学院硕士推免生选拔工作...</a><span>06.22</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/zhaosheng/shuoshi/content-1555.html" title="2018年中国人民大学新闻学院硕士推免生选拔工作坊入选名单">2018年中国人民大学新闻学院硕士推免生选拔工作...</a><span>06.21</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/zhaosheng/shuoshi/content-1539.html" title="2018年中国人民大学新闻学院硕士推免生选拔工作坊通知">2018年中国人民大学新闻学院硕士推免生选拔工作...</a><span>05.29</span></li>
+
+                            </ul>
+                        </div>
+                        <div class="student none">
+                            <ul>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/peixun/content-186.html" title="方洁老师为华商晨报社进行培训讲座">方洁老师为华商晨报社进行培训讲座</a><span>01.13</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/peixun/content-266.html" title="第四届中国少数民族地区信息传播与社会发展论坛征文">第四届中国少数民族地区信息传播与社会发展论...</a><span>05.25</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/peixun/content-264.html" title="学术讲座：叙事对于大众态度及意见的影响">学术讲座：叙事对于大众态度及意见的影响</a><span>05.18</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/peixun/content-262.html" title="新闻学院举办“新媒体研究的文化社会学视角”专题讲座">新闻学院举办“新媒体研究的文化社会学视角”...</a><span>12.14</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/peixun/content-261.html" title="2011出镜（现场）报道工作坊日程安排">2011出镜（现场）报道工作坊日程安排</a><span>12.09</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/peixun/content-260.html" title="2011出镜（现场）报道工作坊邀请函">2011出镜（现场）报道工作坊邀请函</a><span>11.21</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/peixun/content-253.html" title="“新媒体时代的传播特性”讲座信息">“新媒体时代的传播特性”讲座信息</a><span>11.14</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/peixun/content-247.html" title="2011中国人民大学新闻传播学前沿研究生暑期学校录取公告">2011中国人民大学新闻传播学前沿研究生暑期学校...</a><span>07.05</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/peixun/content-243.html" title="“儿童与媒介国际工作坊”录取公告">“儿童与媒介国际工作坊”录取公告</a><span>07.05</span></li>
+                                <li><a href="http://jcr.ruc.edu.cn/xinxi/peixun/content-235.html" title="“全球传播新格局”国际会议议程">“全球传播新格局”国际会议议程</a><span>07.05</span></li>
+
+                            </ul>
+                        </div>
+                    </dd>
+                </dl>
+                <!--相关链接-->
+                <div id="aboutLinks" class="conRt">
+                    <h2 class="title"><a class="titleL" href="http://jcr.ruc.edu.cn/indexcn.html#">相关链接</a></h2>
+                    <ol id="link">
+                        <li class="leftF"><a target="_blank" href="http://202.112.117.194:7001/"><img src="images/sy.jpg"></a></li>
+                        <li><a href="http://cjjc.ruc.edu.cn/CN/volumn/home.shtml"><img src="images/xw.jpg"></a></li>
+                        <li class="leftF"><a href="http://211.71.215.185/home/index.htm"><img src="images/al.jpg"></a></li>
+                        <li><a href="http://211.71.215.181/skip/node_830.htm"><img src="images/cm.jpg"></a></li>
+                    </ol>
+                </div>
+            </aside>
+            <!--//侧边栏：结束(通知公告+招生信息+相关链接)-->
+        </div>
+    </div>
+
+</section>
+
+<footer id="footer" >
+    <div id="footerIn" >
+        <div class="footT visible-md visible-lg">
+            <div class="friendL">
+                <h3>友情链接</h3>
+                <ol>
+                    <li><a href="http://www.ruc.edu.cn/" target="_blank">中国人民大学</a> </li><li><a href="http://xwjd.ruc.edu.cn/" target="_blank">新闻与社会发展研究中心</a> </li><li><a href="http://newsweekly.ruc.edu.cn/" target="_blank">新周网</a> </li><li><a href="http://ejm.ruc.edu.cn/" target="_blank">数字新闻博物馆</a> </li><li><a href="http://202.112.126.102/sqxx/index.html" target="_blank">暑期学校</a> </li><li><a href="http://contribute.wanfangdata.com.cn/" target="_blank">《新闻学论集》</a> </li><li><a href="http://www.gtfoundation.cn/" target="_blank">环球时报公益基金会</a> </li>
+                </ol>
+                <h3>学院地址</h3>
+                <p>北京市海淀区中关村大街59号中国人民大学明德新闻楼&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮政编码： 100872</p>
+            </div>
+            <div class="code_2">
+                <img src="images/wx.png">
+                <img src="images/wb.png">
+            </div>
+        </div>
+        <div class="footD">
+            <p>Copyright © 2016 School of Journalism and Communication, Renmin University of China. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<div class="scroll" id="scroll" style="display:none;"></div>
+
+</body>
+
+<script type="text/javascript">
+    $(function(){
+        // 回到顶部
+        showScroll();
+        function showScroll(){
+            $(window).scroll( function() {
+                var scrollValue=$(window).scrollTop();
+                scrollValue > 100 ? $('div[class=scroll]').fadeIn():$('div[class=scroll]').fadeOut();
+            } );
+            $('#scroll').click(function(){
+                $("html,body").animate({scrollTop:0},200);
+            });
+        };
+        // 动态设置‘回到’顶部的位置
+        let offsetRight =  ($(window).width() - $('.container').width())/2;
+        $('#scroll').css('right',offsetRight)
+        $(window).resize(function(){
+            let offsetRight =  ($(window).width() - $('.container').width())/2;
+            $('#scroll').css('right',offsetRight)
+        });
+        // 点击‘切换导航’弹出  遮罩层
+        $('nav.navbar.navbar-default').on('click',function (e) {
+            $('.nav-mask').toggle();
+        });
+        $('.nav-mask').on('click',function (e) {
+            $('.nav-mask').hide();
+            $('.navbar-collapse.collapse').hide();
+        })
+    })
+</script>
+<script>
+    $(document).ready(function(){
+        /*	$("#learn>ol>li:odd").addClass("right");
+            $("#inter>ol>li:odd").addClass("right");*/
+        $("#focus").hover(function(){$("#focus-prev,#focus-next").show();},function(){$("#focus-prev,#focus-next").hide();});
+        $("#focus").slide({
+            mainCell:"#focus-bar-box ul",
+            targetCell:"#focus-title a",
+            titCell:"#focus-num a",
+            prevCell:"#focus-prev",
+            nextCell:"#focus-next",
+            effect:"left",
+            easing:"easeInOutCirc",
+            autoPlay:true,
+            delayTime:200
+        })
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        $(".tab strong").each(function(index, element) {
+            $(this).mouseover(function() {
+                $(this).siblings().removeClass("current"); //将所有的tab去掉current样式
+                $(this).addClass("current");
+                $(this).parent().next().children().hide();
+                $('.student:eq('+index+')').show();
+                $('.more').next().hide();
+                $('.more:eq('+index+')').show();
+            });
+        });
+
+        $(".current").hover(function(){
+            $(".morezs").show();
+            $(".morepx").hide();
+        });
+        $(".line").hover(function(){
+            $(".morepx").show();
+            $(".morezs").hide();
+        });
+    });
+</script>
+</html>

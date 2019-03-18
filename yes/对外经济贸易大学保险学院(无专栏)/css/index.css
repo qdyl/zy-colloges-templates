@@ -1,0 +1,185 @@
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, iframe, object, embed, fieldset, input, textarea, p, blockquote, td, th { padding: 0px; margin: 0px; }
+table { border-collapse: collapse; border-spacing: 0px; }
+fieldset, img { border: 0px; }
+address, caption, cite, code, dfn, em, strong, th, var { font-weight: normal; font-style: normal; }
+ol, ul { list-style: none; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: 100%; }
+abbr, acronym, iframe { border: none; }
+pre { white-space: normal; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+iframe { display: block; }
+.clearfix::after { height: 0px; font-size: 0px; clear: both; display: block; visibility: hidden; content: "."; }
+.clearfix { }
+:focus { outline: none; }
+.fl { float: left; }
+.fr { float: right; }
+body { font: 12px/20px 微软雅黑, Tahoma, Arial, 宋体, sans-serif; text-size-adjust: none; color: rgb(117, 117, 117); }
+a { color: rgb(113, 113, 113); }
+/*.main { width: 1024px; margin: 0px auto; }*/
+.middle { height: auto; overflow: hidden; margin: 0px auto; background-color: transparent; }
+.ml9 { margin-left: 9px; }
+.picBox {text-align: center; padding: 5px 5px 15px; background: rgb(255, 255, 255); font-size: 12px; }
+.picBox img{
+    width: 100%;
+    height: auto;
+}
+.picBox h1 a { font-size: 18px; color: rgb(0, 0, 0); line-height: 50px; }
+.mt10 { margin-top: 10px; }
+.xyxwtitle, .tzggtitle { font-size: 18px; border-left: 3px solid rgb(206, 57, 50); padding-left: 10px; margin-bottom: 20px; line-height: 20px; }
+.xyxwlist {padding: 20px 30px; height: 250px; background: rgb(255, 255, 255); }
+.xyxwlist ul li { font-size: 14px; line-height: 24px; padding: 3px 0px;  }
+.xyxwlist ul li a{
+    display: inline-block;
+    width: 80%;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.xyxwlist ul li.xwlist_l { border-bottom: none; }
+.xyxwlist span { display: inline-block; float: right; color: rgb(210, 210, 210); font-size: 12px; }
+.tzgg { padding: 20px 28px; width: 39.25%; height: 250px; background: rgb(255, 255, 255); }
+.tz1 { color: rgb(255, 255, 255); font-size: 20px; background: rgb(130, 130, 130); width: 36px; height: 50px; text-align: center; padding-top: 3px; }
+.xygg { font-size: 13px; color: rgb(202, 202, 202); }
+.tz1.on { background: rgb(192, 36, 36); }
+.tz1.on .xygg { color: rgb(222, 161, 161); }
+.tz2 { width: 80%; font-size: 13px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;}
+.lxkc {
+     background: rgb(130, 130, 130); color: rgb(255, 255, 255); text-align: center; font-size: 14px;height: 270px; }
+.lxkc:last-child{
+    margin-right: 0;
+}
+.lxkc h1 { font-size: 18px; margin: 8px; }
+.lxkc img { margin-bottom: 15px;
+    width: 100%;
+    height: auto; }
+.lxkc a { display: inline-block; border: 1px solid rgb(255, 255, 255); background: url("../images/jt.png") 110px center no-repeat; width: 128px; height: 24px; line-height: 24px; color: rgb(255, 255, 255); margin-top: 10px; }
+.hwlx { width: 298px; background: rgb(192, 36, 36); margin-left: 11px; }
+.zsxx { background: rgb(255, 255, 255);  padding: 20px 28px; height: 270px; font-size: 13px; line-height: 30px; }
+.zsxx ul li { width: 100%; height: 34px; overflow: hidden;  overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;}
+.more1 { display: inline-block; float: right; font-size: 12px; }
+.nav_box .nav p.on { background-color: white; color: rgb(0, 0, 0); }
+.redbg{background:#c02424;color:#fff;}
+.redbg h1 a,.xyxw a,.w80 a,.w168 a{color:#fff;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+/*省略号*/
+.oneline-ellipsis{
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+/*轮播图的上margin-top*/
+/*.banner-slick{
+    margin-top: 2px;
+}*/
+
+@media (max-width: 768px){
+    /*5列布局*/
+    .picBox h1 a {
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        line-height: 30px;
+    }
+    .xyxwlist {width: 100%; padding: 20px 30px; height: 250px; }
+    .tzgg { width: 100%;  padding: 2px 8px;height: 150px;
+        margin: 5px 0; }
+    .middle-p{
+        overflow: hidden;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    /**/
+    .zsxx {
+        width: 100%;
+        margin: 5px 0;
+      /*  padding: 20px 28px;*/
+        height: 150px;
+        font-size: 13px;
+        line-height: 30px;
+    }
+}
+
+@media  (max-width: 768px) {
+    /*主体：下部*/
+     .lxkc {
+         width: 49%;
+         padding: 8px 2px;
+        height: 50vw;
+         margin-right: 2%;
+    }
+    .lxkc img {
+        height: 21vw;
+        margin-bottom: 5px;
+    }
+    .lxkc.hwlxv{
+        margin-right: 0;
+    }
+    .lxkc h1 {
+        font-size: 15px;
+        margin: 8px;
+    }
+    .mt10 {
+        margin-top: 0px;
+    }
+/*    .zsxx {
+        height: 220px;
+    }
+    .lxkc h1 {
+        font-size: 16px;
+        margin: 8px;
+    }*/
+}
+
+/*首页增加5列布局*/
+@media (min-width: 768px) {
+    /*主体：5列布局*/
+    .col-sm-1-5 {
+        width: 19%;
+        float: left;
+        margin-right: 1.25%;
+    }
+    .picBox:last-child{
+        margin-right: 0;
+    }
+    /*主体：下（左、右布局）*/
+    .xyxwlist {width: 59.5%; padding: 20px 30px; height: 250px; }
+    .tzgg { width: 39.25%;  padding: 20px 28px;height: 250px;  }
+
+    /*主体：下部*/
+    .lxkc {
+        width: 29%;
+        height: 220px;
+    }
+    .zsxx {
+        height: 252px;
+    }
+    .lxkc h1 {
+        font-size: 16px;
+        margin: 8px;
+    }
+    .lxkc {
+        font-size: 14px;
+        margin-right: 1.25%; height: 252px;
+    }
+    /**/
+    .zsxx {  width: 39.25%; padding: 20px 28px; height: 252px; font-size: 13px; line-height: 30px; }
+}
+
+@media  (min-width: 1200px){
+    .picBox {
+        height: 252px;
+    }
+}
